@@ -76,7 +76,7 @@ const count = ref(0);
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.hello-world__logo--vue.vue:hover {
+.hello-world__logo--vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
