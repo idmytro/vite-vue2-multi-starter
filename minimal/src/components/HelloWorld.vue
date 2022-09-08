@@ -10,19 +10,20 @@ const count = ref(0);
 
 <template>
   <div class="hello-world">
-    <div>
+    <div class="hello-world__grid">
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="hello-world__logo hello-world__logo--vite" alt="Vite logo" />
       </a>
+      <span></span>
       <a href="https://vuejs.org/" target="_blank">
         <img src="../assets/vue.svg" class="hello-world__logo hello-world__logo--vue" alt="Vue logo" />
       </a>
     </div>
 
-    <h1>
-      Vite<sup>{{ viteVersion }}</sup>
+    <h1 class="hello-world__grid">
+      <span>Vite<sup>{{ viteVersion }}</sup></span>
       <small> + </small>
-      Vue<sup>{{ vueVersion }}</sup>
+      <span>Vue<sup>{{ vueVersion }}</sup></span>
     </h1>
 
     <div class="hello-world__card">
@@ -43,6 +44,10 @@ const count = ref(0);
 </template>
 
 <style>
+.hello-world h1 {
+  margin: 0;
+}
+
 .hello-world sup {
   opacity: 0.5;
   font-size: 50%;
@@ -50,6 +55,11 @@ const count = ref(0);
 
 .hello-world small {
   opacity: 0.75;
+}
+
+.hello-world__grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
 }
 
 .hello-world__card {
