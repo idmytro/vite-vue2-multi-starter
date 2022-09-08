@@ -6,6 +6,7 @@ import './style.css';
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
 
+// eslint-disable-next-line no-new
 new Vue({
   el: '#app',
   render: (h) => h(App),
