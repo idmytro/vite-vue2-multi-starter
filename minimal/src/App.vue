@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <div>
+  <div id="app">
     <div>
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -18,7 +18,7 @@ import HelloWorld from './components/HelloWorld.vue';
   </div>
 </template>
 
-<style scoped>
+<style>
 .logo {
   height: 6em;
   padding: 1.5em;
