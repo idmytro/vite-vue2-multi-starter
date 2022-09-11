@@ -16,7 +16,7 @@ const count = ref(0);
         <a
           href="https://vitejs.dev"
           target="_blank"
-          style="--filter-color: #646cffaa;"
+          style="--hover-color: #646cffaa;"
         >
           <img
             src="/vite.svg"
@@ -32,7 +32,7 @@ const count = ref(0);
         <a
           href="https://vuejs.org/"
           target="_blank"
-          style="--filter-color: #42b883aa;"
+          style="--hover-color: #42b883aa;"
         >
           <img
             src="../assets/vue.svg"
@@ -49,7 +49,7 @@ const count = ref(0);
         <a
           href="https://windicss.org/"
           target="_blank"
-          style="--filter-color: #40a1efaa;"
+          style="--hover-color: #40a1efaa;"
         >
           <img
             src="../assets/windicss.svg"
@@ -102,7 +102,7 @@ const count = ref(0);
 }
 
 .hello-world a:hover img {
-  filter: drop-shadow(0 0 0.5em var(--filter-color));
+  filter: drop-shadow(0 0 0.5em var(--hover-color));
 }
 
 .hello-world sup {
@@ -115,6 +115,6 @@ const count = ref(0);
 }
 
 .hello-world a:hover span {
-  color: var(--filter-color);
+  color: var(--hover-color);
 }
 </style>
