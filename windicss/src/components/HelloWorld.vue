@@ -11,7 +11,7 @@ const count = ref(0);
 
 <template>
   <div class="hello-world">
-    <ol class="p-0 list-none flex justify-center text-[3.2em] font-700 m-0">
+    <ol class="flex justify-center text-[3.2em] font-700">
       <li>
         <a
           href="https://vitejs.dev"
@@ -82,6 +82,12 @@ const count = ref(0);
 </template>
 
 <style>
+.hello-world ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .hello-world ol a {
   color: inherit;
   display: flex;
