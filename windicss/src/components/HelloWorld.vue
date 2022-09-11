@@ -4,35 +4,67 @@ import pkg from '../../package.json';
 
 const vueVersion = pkg.dependencies.vue;
 const viteVersion = pkg.devDependencies.vite;
+const windicssVersion = pkg.devDependencies.windicss;
 
 const count = ref(0);
 </script>
 
 <template>
   <div class="hello-world">
-    <div class="hello-world__grid">
-      <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="hello-world__logo hello-world__logo--vite" alt="Vite logo" />
-      </a>
-      <span></span>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="../assets/vue.svg" class="hello-world__logo hello-world__logo--vue" alt="Vue logo" />
-      </a>
-      <span></span>
-      <a href="https://windicss.org//" target="_blank">
-        <img src="../assets/windicss.svg" class="hello-world__logo hello-world__logo--windi" alt="Windicss logo" />
-      </a>
-    </div>
+    <ol class="flex justify-center text-[3.2em] font-700">
+      <li>
+        <a
+          href="https://vitejs.dev"
+          target="_blank"
+          style="--filter-color: #646cffaa;"
+        >
+          <img
+            src="/vite.svg"
+            alt="Vite logo"
+          />
+          <span>
+            <strong>Vite</strong>
+            <sup>{{ viteVersion }}</sup>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://vuejs.org/"
+          target="_blank"
+          style="--filter-color: #42b883aa;"
+        >
+          <img
+            src="../assets/vue.svg"
+            alt="Vue logo"
+          />
+          <span>
+            <small class="px-[0.5em]">+</small>
+            <strong>Vue</strong>
+            <sup>{{ vueVersion }}</sup>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://windicss.org/"
+          target="_blank"
+          style="--filter-color: #40a1efaa;"
+        >
+          <img
+            src="../assets/windicss.svg"
+            alt="Windicss logo"
+          />
+          <span>
+            <small class="px-[0.5em]">+</small>
+            <strong>Windicss</strong>
+            <sup>{{ windicssVersion }}</sup>
+          </span>
+        </a>
+      </li>
+    </ol>
 
-    <h1 class="hello-world__grid m-0">
-      <span>Vite<sup>{{ viteVersion }}</sup></span>
-      <small> + </small>
-      <span>Vue<sup>{{ vueVersion }}</sup></span>
-      <small> + </small>
-      <span>Windicss<sup><!--  --></sup></span>
-    </h1>
-
-    <div class="hello-world__card">
+    <div class="p-[2em]">
       <button type="button" @click="count++">count is {{ count }}</button>
       <p>
         Edit
@@ -45,11 +77,34 @@ const count = ref(0);
       <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
       in your IDE for a better DX
     </p>
-    <p class="hello-world__read-the-docs">Click on the Vite and Vue logos to learn more</p>
+    <p class="text-[#888]">Click on the Vite and Vue logos to learn more</p>
   </div>
 </template>
 
 <style>
+.hello-world ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hello-world ol a {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.hello-world img {
+  height: 96px;
+  padding: 24px;
+  will-change: filter;
+  object-fit: contain;
+}
+
+.hello-world a:hover img {
+  filter: drop-shadow(0 0 0.5em var(--filter-color));
+}
+
 .hello-world sup {
   opacity: 0.5;
   font-size: 50%;
@@ -59,30 +114,7 @@ const count = ref(0);
   opacity: 0.75;
 }
 
-.hello-world__grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
-}
-
-.hello-world__card {
-  padding: 2em;
-}
-
-.hello-world__logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-
-.hello-world__logo--vite:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.hello-world__logo--vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-
-.hello-world__read-the-docs {
-  color: #888;
+.hello-world a:hover span {
+  color: var(--filter-color);
 }
 </style>
