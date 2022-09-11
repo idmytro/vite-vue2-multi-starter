@@ -1,1 +1,1 @@
-# vite-vue2-multi-starter/minimal
+# vite-vue2-multi-starter/windicss
