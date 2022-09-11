@@ -18,12 +18,18 @@ const count = ref(0);
       <a href="https://vuejs.org/" target="_blank">
         <img src="../assets/vue.svg" class="hello-world__logo hello-world__logo--vue" alt="Vue logo" />
       </a>
+      <span></span>
+      <a href="https://windicss.org//" target="_blank">
+        <img src="../assets/windicss.svg" class="hello-world__logo hello-world__logo--windi" alt="Windicss logo" />
+      </a>
     </div>
 
     <h1 class="hello-world__grid">
       <span>Vite<sup>{{ viteVersion }}</sup></span>
       <small> + </small>
       <span>Vue<sup>{{ vueVersion }}</sup></span>
+      <small> + </small>
+      <span>Windicss<sup><!--  --></sup></span>
     </h1>
 
     <div class="hello-world__card">
@@ -59,7 +65,7 @@ const count = ref(0);
 
 .hello-world__grid {
   display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
 }
 
 .hello-world__card {
