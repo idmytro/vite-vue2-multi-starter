@@ -24,7 +24,7 @@ const count = ref(0);
       </a>
     </div>
 
-    <h1 class="hello-world__grid">
+    <h1 class="hello-world__grid m-0">
       <span>Vite<sup>{{ viteVersion }}</sup></span>
       <small> + </small>
       <span>Vue<sup>{{ vueVersion }}</sup></span>
@@ -50,10 +50,6 @@ const count = ref(0);
 </template>
 
 <style>
-.hello-world h1 {
-  margin: 0;
-}
-
 .hello-world sup {
   opacity: 0.5;
   font-size: 50%;
