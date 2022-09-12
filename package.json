@@ -16,8 +16,8 @@
   },
   "homepage": "https://github.com/idmytro/vite-vue2-multi-starter#readme",
   "devDependencies": {
+    "@vue/eslint-config-airbnb": "^7.0.0",
     "eslint": "^8.23.0",
-    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-vue": "^9.4.0"
   }
