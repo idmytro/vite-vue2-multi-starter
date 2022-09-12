@@ -5,8 +5,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
+    'plugin:vue/recommended',
+    '@vue/airbnb',
   ],
   overrides: [
   ],
@@ -24,6 +24,15 @@ module.exports = {
         '**/vite.config.js',
         '**/windi.config.js',
       ],
+    }],
+    'vue/first-attribute-linebreak': [2, { singleline: 'beside' }],
+    'vue/max-attributes-per-line': [2, {
+      singleline: {
+        max: 1,
+      },
+      multiline: {
+        max: 1,
+      },
     }],
   },
 };

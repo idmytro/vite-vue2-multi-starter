@@ -16,6 +16,7 @@ const count = ref(0);
         <a
           href="https://vitejs.dev"
           target="_blank"
+          rel="noopener noreferrer"
           style="--hover-color: #646cffaa;"
         >
           <img
@@ -32,6 +33,7 @@ const count = ref(0);
         <a
           href="https://vuejs.org/"
           target="_blank"
+          rel="noopener noreferrer"
           style="--hover-color: #42b883aa;"
         >
           <img
@@ -49,6 +51,7 @@ const count = ref(0);
         <a
           href="https://windicss.org/"
           target="_blank"
+          rel="noopener noreferrer"
           style="--hover-color: #40a1efaa;"
         >
           <img
@@ -65,7 +68,9 @@ const count = ref(0);
     </ol>
 
     <div class="p-[2em]">
-      <button type="button" @click="count++">count is {{ count }}</button>
+      <button type="button" @click="count++">
+        count is {{ count }}
+      </button>
       <p>
         Edit
         <code>components/HelloWorld.vue</code> to test HMR
@@ -74,10 +79,16 @@ const count = ref(0);
 
     <p>
       Install
-      <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+      <a
+        href="https://github.com/johnsoncodehk/volar"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Volar</a>
       in your IDE for a better DX
     </p>
-    <p class="text-[#888]">Click on the Vite and Vue logos to learn more</p>
+    <p class="text-[#888]">
+      Click on the Vite and Vue logos to learn more
+    </p>
   </div>
 </template>
 
