@@ -114,6 +114,10 @@ const count = ref(0);
   opacity: 0.75;
 }
 
+.hello-world a span {
+  transition: color 0.3s;
+}
+
 .hello-world a:hover span {
   color: var(--hover-color);
 }

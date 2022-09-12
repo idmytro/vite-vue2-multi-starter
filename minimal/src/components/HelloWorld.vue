@@ -10,21 +10,41 @@ const count = ref(0);
 
 <template>
   <div class="hello-world">
-    <div class="hello-world__grid">
-      <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="hello-world__logo hello-world__logo--vite" alt="Vite logo" />
-      </a>
-      <span></span>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="../assets/vue.svg" class="hello-world__logo hello-world__logo--vue" alt="Vue logo" />
-      </a>
-    </div>
-
-    <h1 class="hello-world__grid">
-      <span>Vite<sup>{{ viteVersion }}</sup></span>
-      <small> + </small>
-      <span>Vue<sup>{{ vueVersion }}</sup></span>
-    </h1>
+    <ol>
+      <li>
+        <a
+          href="https://vitejs.dev"
+          target="_blank"
+          style="--hover-color: #646cffaa;"
+        >
+          <img
+            src="/vite.svg"
+            alt="Vite logo"
+          />
+          <span>
+            <strong>Vite</strong>
+            <sup>{{ viteVersion }}</sup>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://vuejs.org/"
+          target="_blank"
+          style="--hover-color: #42b883aa;"
+        >
+          <img
+            src="../assets/vue.svg"
+            alt="Vue logo"
+          />
+          <span>
+            <small class="px-[0.5em]">+</small>
+            <strong>Vue</strong>
+            <sup>{{ vueVersion }}</sup>
+          </span>
+        </a>
+      </li>
+    </ol>
 
     <div class="hello-world__card">
       <button type="button" @click="count++">count is {{ count }}</button>
@@ -44,8 +64,31 @@ const count = ref(0);
 </template>
 
 <style>
-.hello-world h1 {
+.hello-world ol {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 3.2em;
+  font-weight: 700;
+}
+
+.hello-world ol a {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.hello-world img {
+  height: 96px;
+  padding: 24px;
+  will-change: filter;
+  object-fit: contain;
+}
+
+.hello-world a:hover img {
+  filter: drop-shadow(0 0 0.5em var(--hover-color));
 }
 
 .hello-world sup {
@@ -57,27 +100,16 @@ const count = ref(0);
   opacity: 0.75;
 }
 
-.hello-world__grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
+.hello-world a span {
+  transition: color 0.3s;
+}
+
+.hello-world a:hover span {
+  color: var(--hover-color);
 }
 
 .hello-world__card {
   padding: 2em;
-}
-
-.hello-world__logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-
-.hello-world__logo--vite:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.hello-world__logo--vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
 }
 
 .hello-world__read-the-docs {
