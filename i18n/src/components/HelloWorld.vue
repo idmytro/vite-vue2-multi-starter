@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import pkg from '../../package.json';
 
 const vueVersion = pkg.dependencies.vue;
+const vueI18nVersion = pkg.dependencies['vue-i18n'];
 const viteVersion = pkg.devDependencies.vite;
 
 const count = ref(0);
@@ -40,9 +41,27 @@ const count = ref(0);
             alt="Vue logo"
           />
           <span>
-            <small class="px-[0.5em]">+</small>
+            <small>+</small>
             <strong>Vue</strong>
             <sup>{{ vueVersion }}</sup>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://vuejs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--hover-color: #42b883aa;"
+        >
+          <img
+            src="../assets/vue-i18n-logo.svg"
+            alt="Vue i18n logo"
+          />
+          <span>
+            <small>+</small>
+            <strong>Vue-i18n</strong>
+            <sup>{{ vueI18nVersion }}</sup>
           </span>
         </a>
       </li>
@@ -91,6 +110,10 @@ const count = ref(0);
   color: inherit;
   display: flex;
   flex-direction: column;
+}
+
+.hello-world ol small {
+  padding: 0 0.5em;
 }
 
 .hello-world img {
