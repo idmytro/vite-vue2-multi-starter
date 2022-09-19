@@ -40,7 +40,7 @@ const count = ref(0);
             alt="Vue logo"
           />
           <span>
-            <small class="px-[0.5em]">+</small>
+            <small>+</small>
             <strong>Vue</strong>
             <sup>{{ vueVersion }}</sup>
           </span>
@@ -91,6 +91,10 @@ const count = ref(0);
   color: inherit;
   display: flex;
   flex-direction: column;
+}
+
+.hello-world ol small {
+  padding: 0 0.5em;
 }
 
 .hello-world img {
