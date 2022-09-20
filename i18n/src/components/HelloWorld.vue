@@ -92,6 +92,7 @@ const count = ref(0);
     <p class="hello-world__read-the-docs">
       Click on the Vite and Vue logos to learn more
     </p>
+    <p>{{ $t('homepage') }}</p>
   </div>
 </template>
 
