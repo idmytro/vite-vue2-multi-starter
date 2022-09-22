@@ -25,6 +25,7 @@ module.exports = {
         '**/windi.config.js',
       ],
     }],
+    'import/prefer-default-export': 0,
     'vue/first-attribute-linebreak': [2, { singleline: 'beside' }],
     'vue/max-attributes-per-line': [2, {
       singleline: {
