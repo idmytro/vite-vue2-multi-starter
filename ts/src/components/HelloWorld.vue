@@ -1,7 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import pkg from '../../package.json';
 
+const tsVersion = pkg.devDependencies.typescript;
 const vueVersion = pkg.dependencies.vue;
 const viteVersion = pkg.devDependencies.vite;
 
@@ -43,6 +44,24 @@ const count = ref(0);
             <small>+</small>
             <strong>Vue</strong>
             <sup>{{ vueVersion }}</sup>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--hover-color: #3278C7aa;"
+        >
+          <img
+            src="../assets/ts-logo-128.svg"
+            alt="TS logo"
+          />
+          <span>
+            <small>+</small>
+            <strong>TS</strong>
+            <sup>{{ tsVersion }}</sup>
           </span>
         </a>
       </li>
