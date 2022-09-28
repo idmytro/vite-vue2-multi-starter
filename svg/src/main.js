@@ -6,6 +6,11 @@ import './style.css';
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
 
+const modules = import.meta.glob('./assets/svg/*.svg');
+Object.entries(modules).forEach(async ([, el]) => {
+  await el();
+});
+
 // eslint-disable-next-line no-new
 new Vue({
   el: '#app',

@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue';
+import SvgIcon from './SvgIcon.vue';
 import pkg from '../../package.json';
+import viteIcon from '../assets/vite.svg';
 
 const vueVersion = pkg.dependencies.vue;
 const viteVersion = pkg.devDependencies.vite;
@@ -18,10 +20,7 @@ const count = ref(0);
           rel="noopener noreferrer"
           style="--hover-color: #646cffaa;"
         >
-          <img
-            src="/vite.svg"
-            alt="Vite logo"
-          />
+          <SvgIcon :name="viteIcon" />
           <span>
             <strong>Vite</strong>
             <sup>{{ viteVersion }}</sup>
@@ -35,10 +34,7 @@ const count = ref(0);
           rel="noopener noreferrer"
           style="--hover-color: #42b883aa;"
         >
-          <img
-            src="../assets/vue.svg"
-            alt="Vue logo"
-          />
+          <SvgIcon name="vue" />
           <span>
             <small>+</small>
             <strong>Vue</strong>
@@ -47,6 +43,15 @@ const count = ref(0);
         </a>
       </li>
     </ol>
+    <p class="hello-world__plugins">
+      <strong>Vite plugins: </strong>
+      <a
+        href="https://www.npmjs.com/package/vite-plugin-svg-sprite"
+        target="_blank"
+        rel="noopener noreferrer"
+      >svg-sprite
+      </a>
+    </p>
 
     <div class="hello-world__card">
       <button
@@ -91,20 +96,20 @@ const count = ref(0);
   color: inherit;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hello-world ol small {
   padding: 0 0.5em;
 }
 
-.hello-world img {
-  height: 96px;
-  padding: 24px;
+.hello-world .svg-icon {
+  height: auto;
+  width: 100px;
   will-change: filter;
-  object-fit: contain;
 }
 
-.hello-world a:hover img {
+.hello-world a:hover .svg-icon {
   filter: drop-shadow(0 0 0.5em var(--hover-color));
 }
 
@@ -125,8 +130,12 @@ const count = ref(0);
   color: var(--hover-color);
 }
 
+.hello-world__plugins {
+  margin-top: 2em;
+}
+
 .hello-world__card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .hello-world__read-the-docs {
