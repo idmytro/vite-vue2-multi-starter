@@ -146,7 +146,7 @@ const count = ref(0);
 }
 
 .hello-world__card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .hello-world__read-the-docs {
