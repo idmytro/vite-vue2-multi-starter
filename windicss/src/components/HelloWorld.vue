@@ -67,8 +67,11 @@ const count = ref(0);
       </li>
     </ol>
 
-    <div class="p-[2em]">
-      <button type="button" @click="count++">
+    <div class="p-[1em]">
+      <button
+        type="button"
+        @click="count++"
+      >
         count is {{ count }}
       </button>
       <p>
