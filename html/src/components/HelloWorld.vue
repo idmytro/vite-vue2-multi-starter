@@ -48,6 +48,16 @@ const count = ref(0);
       </li>
     </ol>
 
+    <p class="hello-world__plugins">
+      <strong>Vite plugins: </strong>
+      <a
+        href="https://www.npmjs.com/package/vite-plugin-html-env"
+        target="_blank"
+        rel="noopener noreferrer"
+      >html-env
+      </a>
+    </p>
+
     <div class="hello-world__card">
       <button
         type="button"
@@ -125,8 +135,12 @@ const count = ref(0);
   color: var(--hover-color);
 }
 
+.hello-world__plugins {
+  margin-top: 2em;
+}
+
 .hello-world__card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .hello-world__read-the-docs {

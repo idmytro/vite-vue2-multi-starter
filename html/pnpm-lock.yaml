@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vitejs/plugin-vue2': ^1.1.2
   vite: ^3.1.0
+  vite-plugin-html-env: ^1.2.7
   vue: ^2.7.10
 
 dependencies:
@@ -11,6 +12,7 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-vue2': 1.1.2_vite@3.1.0+vue@2.7.10
   vite: 3.1.0
+  vite-plugin-html-env: 1.2.7_vite@3.1.0
 
 packages:
 
@@ -354,6 +356,15 @@ packages:
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+
+  /vite-plugin-html-env/1.2.7_vite@3.1.0:
+    resolution: {integrity: sha512-vdTnKtuBeB8Zp93DCbN0Qjf4odW2msVRq45r7lGKA6nwQGJFj6YemU54u3xPPkvDeZhG8DEEU64xbLwzVEBilQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      vite: '*'
+    dependencies:
+      vite: 3.1.0
+    dev: true
 
   /vite/3.1.0:
     resolution: {integrity: sha512-YBg3dUicDpDWFCGttmvMbVyS9ydjntwEjwXRj2KBFwSB8SxmGcudo1yb8FW5+M/G86aS8x828ujnzUVdsLjs9g==}
