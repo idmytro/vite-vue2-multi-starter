@@ -19,6 +19,12 @@ npx degit idmytro/vite-vue2-multi-starter/windicss my-project
 OR
 
 ```
+npx degit idmytro/vite-vue2-multi-starter/router my-project
+```
+
+OR
+
+```
 npx degit idmytro/vite-vue2-multi-starter/i18n my-project
 ```
 
