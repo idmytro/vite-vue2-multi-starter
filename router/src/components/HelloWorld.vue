@@ -48,6 +48,16 @@ const count = ref(0);
       </li>
     </ol>
 
+    <p class="hello-world__plugins">
+      <strong>Vue plugins: </strong>
+      <a
+        href="https://v3.router.vuejs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >vue-router
+      </a>
+    </p>
+
     <div class="hello-world__card">
       <button
         type="button"
