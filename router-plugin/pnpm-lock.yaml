@@ -8,11 +8,11 @@ specifiers:
 
 dependencies:
   vue: 2.7.10
-  vue-router: 3.6.5_vue@2.7.10
 
 devDependencies:
   '@vitejs/plugin-vue2': 1.1.2_vite@3.1.0+vue@2.7.10
   vite: 3.1.0
+  vue-router: 3.6.5_vue@2.7.10
 
 packages:
 
@@ -390,7 +390,7 @@ packages:
       vue: ^2
     dependencies:
       vue: 2.7.10
-    dev: false
+    dev: true
 
   /vue/2.7.10:
     resolution: {integrity: sha512-HmFC70qarSHPXcKtW8U8fgIkF6JGvjEmDiVInTkKZP0gIlEPhlVlcJJLkdGIDiNkIeA2zJPQTWJUI4iWe+AVfg==}
