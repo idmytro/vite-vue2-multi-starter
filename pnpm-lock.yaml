@@ -5,15 +5,15 @@ specifiers:
   '@vue/eslint-config-airbnb': ^7.0.0
   eslint: ^8.23.0
   eslint-plugin-import: ^2.26.0
-  eslint-plugin-vue: ^9.4.0
+  eslint-plugin-vue: ^9.5.1
   typescript: ^4.8.3
 
 devDependencies:
   '@typescript-eslint/parser': 5.38.0_itqs5654cmlnjraw6gjzqacppi
-  '@vue/eslint-config-airbnb': 7.0.0_v7xnphy5ful6tx65mccgnxemni
+  '@vue/eslint-config-airbnb': 7.0.0_xc33yqi7vpk5xxad7p25ixvrzu
   eslint: 8.23.0
   eslint-plugin-import: 2.26.0_yre3sybncuzar2oftelprrmbvy
-  eslint-plugin-vue: 9.4.0_eslint@8.23.0
+  eslint-plugin-vue: 9.5.1_eslint@8.23.0
   typescript: 4.8.3
 
 packages:
@@ -161,7 +161,7 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vue/eslint-config-airbnb/7.0.0_v7xnphy5ful6tx65mccgnxemni:
+  /@vue/eslint-config-airbnb/7.0.0_xc33yqi7vpk5xxad7p25ixvrzu:
     resolution: {integrity: sha512-qC3HRnvaDWRocDKPVKUnjWLXo1NDfDSPKwizc49llN/mRZF2Q9D/7wcAMwzCVzPM/D80ZUz0sy1cq9u/6jFnqw==}
     peerDependencies:
       eslint: ^8.2.0
@@ -174,7 +174,7 @@ packages:
       eslint-plugin-import: 2.26.0_yre3sybncuzar2oftelprrmbvy
       eslint-plugin-jsx-a11y: 6.6.1_eslint@8.23.0
       eslint-plugin-react: 7.31.8_eslint@8.23.0
-      eslint-plugin-vue: 9.4.0_eslint@8.23.0
+      eslint-plugin-vue: 9.5.1_eslint@8.23.0
       eslint-plugin-vuejs-accessibility: 1.2.0_eslint@8.23.0
       vue-eslint-parser: 9.1.0_eslint@8.23.0
     transitivePeerDependencies:
@@ -633,8 +633,8 @@ packages:
       string.prototype.matchall: 4.0.7
     dev: true
 
-  /eslint-plugin-vue/9.4.0_eslint@8.23.0:
-    resolution: {integrity: sha512-Nzz2QIJ8FG+rtJaqT/7/ru5ie2XgT9KCudkbN0y3uFYhQ41nuHEaboLAiqwMcK006hZPQv/rVMRhUIwEGhIvfQ==}
+  /eslint-plugin-vue/9.5.1_eslint@8.23.0:
+    resolution: {integrity: sha512-Y0sL2RY7Xc9S8kNih9lbwHIDmewUg9bfas6WSzsOWRgDXhIHKxRBZYNAnVcXBFfE+bMWHUA5GLChl7TcTYUI8w==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
