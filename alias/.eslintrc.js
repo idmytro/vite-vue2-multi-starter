@@ -1,4 +1,20 @@
 module.exports = {
+  root: true,
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+        extensions: [
+          '.js',
+          '.json',
+          '.vue',
+          '.css',
+        ],
+      },
+    },
+  },
   env: {
     browser: true,
     es2021: true,
