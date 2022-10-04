@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import { defineConfig } from 'vitest/config';
 import vue from '@vitejs/plugin-vue2';
 import path from 'path';
