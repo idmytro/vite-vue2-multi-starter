@@ -21,8 +21,10 @@ module.exports = {
     'max-len': 0,
     'import/no-extraneous-dependencies': [2, {
       devDependencies: [
-        '**/vite.config.js',
-        '**/windi.config.js',
+        '**/vite.config.*',
+        '**/vitest.config.*',
+        '**/windi.config.*',
+        '**/*.spec.*',
       ],
     }],
     'import/prefer-default-export': 0,
