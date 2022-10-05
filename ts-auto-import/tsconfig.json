@@ -28,12 +28,13 @@
     /* Type Checking */
     "strict": true,
     /* Completeness */
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.vue",
     "src/**/*.d.ts",
+    "auto-imports.d.ts"
   ],
   "exclude": [
     "node_modules"

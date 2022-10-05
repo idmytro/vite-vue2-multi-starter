@@ -1,10 +1,12 @@
 import Vue from 'vue';
-import App from './App.vue';
+import App from '@/App.vue';
 
 import './style.css';
 
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
+
+works();
 
 // eslint-disable-next-line no-new
 new Vue({
