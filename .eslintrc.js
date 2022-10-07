@@ -37,5 +37,6 @@ module.exports = {
         max: 1,
       },
     }],
+    'vue/max-len': 0,
   },
 };
