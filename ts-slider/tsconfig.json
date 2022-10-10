@@ -9,7 +9,7 @@
       "scripthost"
     ],
     "jsx": "preserve",
-    /* Modules */
+    "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
     "baseUrl": ".",

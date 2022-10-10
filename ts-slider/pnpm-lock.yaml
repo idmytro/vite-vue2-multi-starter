@@ -6,6 +6,8 @@ specifiers:
   typescript: ^4.8.3
   vite: ^3.1.0
   vue: ^2.7.10
+  vue-class-component: ^7.2.6
+  vue-property-decorator: ^9.1.2
   vue-slider-component: ^3.2.20
 
 dependencies:
@@ -17,6 +19,8 @@ devDependencies:
   sass: 1.55.0
   typescript: 4.8.3
   vite: 3.1.0_sass@1.55.0
+  vue-class-component: 7.2.6_vue@2.7.10
+  vue-property-decorator: 9.1.2_xovzknyasni4brq5g3yfvdslua
 
 packages:
 
@@ -517,7 +521,6 @@ packages:
       vue: ^2.0.0
     dependencies:
       vue: 2.7.10
-    dev: false
 
   /vue-property-decorator/8.5.1_vue@2.7.10:
     resolution: {integrity: sha512-O6OUN2OMsYTGPvgFtXeBU3jPnX5ffQ9V4I1WfxFQ6dqz6cOUbR3Usou7kgFpfiXDvV7dJQSFcJ5yUPgOtPPm1Q==}
@@ -527,6 +530,16 @@ packages:
       vue: 2.7.10
       vue-class-component: 7.2.6_vue@2.7.10
     dev: false
+
+  /vue-property-decorator/9.1.2_xovzknyasni4brq5g3yfvdslua:
+    resolution: {integrity: sha512-xYA8MkZynPBGd/w5QFJ2d/NM0z/YeegMqYTphy7NJQXbZcuU6FC6AOdUAcy4SXP+YnkerC6AfH+ldg7PDk9ESQ==}
+    peerDependencies:
+      vue: '*'
+      vue-class-component: '*'
+    dependencies:
+      vue: 2.7.10
+      vue-class-component: 7.2.6_vue@2.7.10
+    dev: true
 
   /vue-slider-component/3.2.20_vue@2.7.10:
     resolution: {integrity: sha512-S5+4d6zdL+/ClpDQoIgImIdXRv2b+75PIy3cDGsZsakhroJD6cSFA0juY/AblGqhvIkNcBIU354eOw6T26DWbA==}

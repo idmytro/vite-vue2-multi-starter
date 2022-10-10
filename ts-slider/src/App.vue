@@ -1,12 +1,19 @@
 <script lang="ts">
 import VueSlider from 'vue-slider-component';
+// import VueSlider from 'vue-slider-component/dist/vue-slider-component.umd.min';
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+// import HelloWorld from './components/HelloWorld.vue';
 
 export default defineComponent({
   components: {
     VueSlider,
-    HelloWorld,
+    // VueSlider: () => import('vue-slider-component').then((module) => {
+    //   console.log(module.default);
+    //   // debugger
+    //   return module?.default;
+    //   // return module
+    // }),
+    // // HelloWorld,
   },
   data() {
     return {
@@ -16,6 +23,29 @@ export default defineComponent({
 });
 
 </script>
+
+<!-- <script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+// import VueSlider from 'vue-slider-component'
+
+@Component({
+  components: {
+    VueSlider: () => import('vue-slider-component').then((module) => {
+      console.log(module.default);
+      // debugger
+      return module?.default;
+      // return module
+    }),
+  },
+})
+export default class MySliderComponent extends Vue {
+  value = 50;
+
+  created() {
+    console.log('MySliderComponent.vue');
+  }
+}
+</script> -->
 
 <template>
   <div id="app">
