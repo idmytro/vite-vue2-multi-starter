@@ -1,19 +1,15 @@
 <script lang="ts">
-import VueSlider from 'vue-slider-component';
-// import VueSlider from 'vue-slider-component/dist/vue-slider-component.umd.min';
+// import VueSlider from 'vue-slider-component';
+import { VueSlider } from 'vite-libs';
 import { defineComponent } from 'vue';
-// import HelloWorld from './components/HelloWorld.vue';
+
+// import Observable from 'zen-observable';
+
+// Observable.of(1, 2, 3).subscribe((x) => console.log(x));
 
 export default defineComponent({
   components: {
     VueSlider,
-    // VueSlider: () => import('vue-slider-component').then((module) => {
-    //   console.log(module.default);
-    //   // debugger
-    //   return module?.default;
-    //   // return module
-    // }),
-    // // HelloWorld,
   },
   data() {
     return {
@@ -24,34 +20,10 @@ export default defineComponent({
 
 </script>
 
-<!-- <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-// import VueSlider from 'vue-slider-component'
-
-@Component({
-  components: {
-    VueSlider: () => import('vue-slider-component').then((module) => {
-      console.log(module.default);
-      // debugger
-      return module?.default;
-      // return module
-    }),
-  },
-})
-export default class MySliderComponent extends Vue {
-  value = 50;
-
-  created() {
-    console.log('MySliderComponent.vue');
-  }
-}
-</script> -->
-
 <template>
   <div id="app">
     <h1>slider</h1>
     <vue-slider v-model="value" />
-    <!-- <HelloWorld /> -->
   </div>
 </template>
 

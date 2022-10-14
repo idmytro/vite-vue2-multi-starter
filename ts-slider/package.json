@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "vue": "^2.7.10",
-    "vue-slider-component": "^3.2.20",
     "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2"
+    "vue-property-decorator": "^9.1.2",
+    "vue-slider-component": "^3.2.20",
+    "zen-observable": "^0.8.15",
+    "vite-libs": "https://github.com/idmytro/vite-libs.git#4c0aa9c"
   },
   "devDependencies": {
     "@vitejs/plugin-vue2": "^1.1.2",
