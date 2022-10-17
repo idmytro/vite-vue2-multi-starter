@@ -8,6 +8,7 @@ Vue.config.devtools = true;
 
 const modules = import.meta.glob('./assets/svg/*.svg');
 Object.entries(modules).forEach(async ([, el]) => {
+  if (typeof el !== 'function') return;
   await el();
 });
 
