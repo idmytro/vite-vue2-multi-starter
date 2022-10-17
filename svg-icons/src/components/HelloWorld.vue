@@ -2,7 +2,6 @@
 import { ref } from 'vue';
 import SvgIcon from './SvgIcon.vue';
 import pkg from '../../package.json';
-import viteIcon from '../assets/vite.svg';
 
 const vueVersion = pkg.dependencies.vue;
 const viteVersion = pkg.devDependencies.vite;
@@ -20,7 +19,7 @@ const count = ref(0);
           rel="noopener noreferrer"
           style="--hover-color: #646cffaa;"
         >
-          <SvgIcon :name="viteIcon" />
+          <SvgIcon name="vite" />
           <span>
             <strong>Vite</strong>
             <sup>{{ viteVersion }}</sup>
@@ -46,10 +45,10 @@ const count = ref(0);
     <p class="hello-world__plugins">
       <strong>Vite plugins: </strong>
       <a
-        href="https://www.npmjs.com/package/vite-plugin-svg-sprite"
+        href="https://www.npmjs.com/package/vite-plugin-svg-icons"
         target="_blank"
         rel="noopener noreferrer"
-      >svg-sprite
+      >svg-icons
       </a>
     </p>
 

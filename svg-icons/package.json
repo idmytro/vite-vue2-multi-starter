@@ -1,5 +1,5 @@
 {
-  "name": "vite-vue2-svg",
+  "name": "vite-vue2-svg-icons",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -15,8 +15,6 @@
     "@vitejs/plugin-vue2": "^1.1.2",
     "fast-glob": "^3.2.12",
     "vite": "^3.1.0",
-    "vite-plugin-svg-icons": "^2.0.1",
-    "vite-plugin-svg-sprite": "^0.3.0",
-    "vite-plugin-svg-sprite-component": "^1.0.10"
+    "vite-plugin-svg-icons": "^2.0.1"
   }
 }
