@@ -16,7 +16,9 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": [],
+    "types": [
+      "vite-plugin-sentry/client"
+    ],
     "resolveJsonModule": true,
     /* Emit */
     "sourceMap": true,
