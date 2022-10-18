@@ -28,6 +28,11 @@ module.exports = {
         '**/*.spec.*',
       ],
     }],
+    'import/no-unresolved': [2, {
+      ignore: [
+        'virtual:vite-plugin-sentry/sentry-config',
+      ],
+    }],
     'import/prefer-default-export': 0,
     'vue/first-attribute-linebreak': [2, { singleline: 'beside' }],
     'vue/max-attributes-per-line': [2, {
