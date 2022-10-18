@@ -9,7 +9,7 @@ import './style.css';
 
 const {
   VITE_SENTRY_DSN,
-  VITE_SENTRY_SITE_URL,
+  VITE_SENTRY_HOSTNAME,
 } = import.meta.env;
 
 init({
@@ -21,7 +21,7 @@ init({
     new Integrations.BrowserTracing({
       tracingOrigins: [
         'localhost',
-        VITE_SENTRY_SITE_URL,
+        VITE_SENTRY_HOSTNAME,
         /^\//,
       ],
     }),
