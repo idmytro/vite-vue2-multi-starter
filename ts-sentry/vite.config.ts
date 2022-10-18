@@ -44,8 +44,7 @@ export default ({ mode }) => {
       sentry(env),
     ],
     build: {
-    /* required: tells vite to create source maps */
-      sourcemap: true,
+      sourcemap: 'hidden',
     },
   });
 };
