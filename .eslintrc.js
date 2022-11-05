@@ -20,6 +20,7 @@ module.exports = {
   ],
   rules: {
     'max-len': 0,
+
     'import/no-extraneous-dependencies': [2, {
       devDependencies: [
         '**/vite.config.*',
