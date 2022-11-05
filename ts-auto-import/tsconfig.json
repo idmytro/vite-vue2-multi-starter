@@ -16,7 +16,9 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": [],
+    "types": [
+      "node"
+    ],
     "resolveJsonModule": true,
     /* Emit */
     "sourceMap": true,

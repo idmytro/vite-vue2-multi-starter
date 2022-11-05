@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue2';
 import AutoImport from 'unplugin-auto-import/vite';
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'node:url';
 
 export default defineConfig({
   resolve: {
