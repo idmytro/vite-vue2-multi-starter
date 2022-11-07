@@ -1,5 +1,10 @@
 module.exports = {
   root: true,
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
   settings: {
     'import/resolver': {
       alias: {
@@ -7,18 +12,15 @@ module.exports = {
           ['@', './src'],
         ],
         extensions: [
+          '.ts',
           '.js',
           '.json',
           '.vue',
           '.css',
+          '.scss',
         ],
       },
     },
-  },
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
   },
   extends: [
     'plugin:vue/recommended',
@@ -35,10 +37,18 @@ module.exports = {
   ],
   rules: {
     'max-len': 0,
+
     'import/no-extraneous-dependencies': [2, {
       devDependencies: [
-        '**/vite.config.js',
-        '**/windi.config.js',
+        '**/vite.config.*',
+        '**/vitest.config.*',
+        '**/windi.config.*',
+        '**/*.spec.*',
+      ],
+    }],
+    'import/no-unresolved': [2, {
+      ignore: [
+        'virtual:vite-plugin-sentry/sentry-config',
       ],
     }],
     'import/prefer-default-export': 0,
@@ -51,5 +61,6 @@ module.exports = {
         max: 1,
       },
     }],
+    'vue/max-len': 0,
   },
 };
