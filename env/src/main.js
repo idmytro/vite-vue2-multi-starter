@@ -6,7 +6,7 @@ import './style.css';
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
 
-console.log(process.env);
+console.log(process.env.VUE_APP_VAR);
 
 /* eslint-disable-next-line no-new */
 new Vue({
