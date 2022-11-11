@@ -6,21 +6,21 @@ module.exports = {
     node: true,
   },
   settings: {
-    'import/resolver': {
-      alias: {
-        map: [
-          ['@', './src'],
-        ],
-        extensions: [
-          '.ts',
-          '.js',
-          '.json',
-          '.vue',
-          '.css',
-          '.scss',
-        ],
-      },
-    },
+    // 'import/resolver': {
+    //   alias: {
+    //     map: [
+    //       ['@', './src'],
+    //     ],
+    //     extensions: [
+    //       '.ts',
+    //       '.js',
+    //       '.json',
+    //       '.vue',
+    //       '.css',
+    //       '.scss',
+    //     ],
+    //   },
+    // },
   },
   extends: [
     'plugin:vue/recommended',
@@ -40,6 +40,7 @@ module.exports = {
 
     'import/no-extraneous-dependencies': [2, {
       devDependencies: [
+        '**/build/*',
         '**/vite.config.*',
         '**/vitest.config.*',
         '**/windi.config.*',
