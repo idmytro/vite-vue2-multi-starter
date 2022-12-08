@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-import './style.css';
+import './style.scss';
 
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
