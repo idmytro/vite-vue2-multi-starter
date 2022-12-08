@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "stylelint:diff": "stylelint $(git diff origin/main...HEAD --name-only) --allow-empty-input"
   },
   "dependencies": {
     "vue": "^2.7.10"
