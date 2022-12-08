@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+
 import pkg from '../../package.json';
 
 const vueVersion = pkg.dependencies.vue;
@@ -113,10 +114,6 @@ const count = ref(0);
 .hello-world sup {
   opacity: 0.5;
   font-size: 50%;
-}
-
-.hello-world small {
-  opacity: 0.75;
 }
 
 .hello-world a span {
