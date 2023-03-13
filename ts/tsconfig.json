@@ -9,6 +9,7 @@
       "scripthost"
     ],
     "jsx": "preserve",
+
     /* Modules */
     "module": "esnext",
     "moduleResolution": "node",
@@ -18,16 +19,21 @@
     },
     "types": [],
     "resolveJsonModule": true,
+
     /* Emit */
     "sourceMap": true,
     "importHelpers": true,
     "outDir": "dist",
+
     /* Interop Constraints */
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+
     /* Type Checking */
     "strict": true,
+    "noImplicitAny": false,
+
     /* Completeness */
     "skipLibCheck": true,
   },
