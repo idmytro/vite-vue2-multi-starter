@@ -21,6 +21,7 @@
     /* Emit */
     "sourceMap": true,
     "importHelpers": true,
+    "outDir": "dist",
     /* Interop Constraints */
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
