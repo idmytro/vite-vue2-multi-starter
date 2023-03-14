@@ -16,7 +16,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": [],
+    "types": ["vitest/globals"],
     "resolveJsonModule": true,
     /* Emit */
     "sourceMap": true,
