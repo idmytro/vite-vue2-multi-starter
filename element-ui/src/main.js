@@ -8,8 +8,6 @@ Vue.component(Button.name, Button);
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
 
-// Vue.use(Notification);
-
 /* eslint-disable-next-line no-new */
 new Vue({
   el: '#app',
