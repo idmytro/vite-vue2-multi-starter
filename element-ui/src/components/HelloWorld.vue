@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import { Notification } from 'element-ui';
+import  Notification from 'element-ui/packages/notification';
 import pkg from '../../package.json';
 
 import 'element-theme-chalk/lib/button.css';

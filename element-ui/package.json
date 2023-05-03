@@ -15,7 +15,12 @@
     "vue": "^2.7.10"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@rollup/plugin-babel": "^5.2.2",
+    "babel": "^6.23.0",
     "@vitejs/plugin-vue2": "^1.1.2",
-    "vite": "^4.1.0"
+    "vite": "^4.1.0",
+    "vite4-plugin-babel": "^1.1.2"
   }
 }
