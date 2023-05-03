@@ -49,12 +49,9 @@ const count = ref(0);
     </ol>
 
     <div class="hello-world__card">
-      <button
-        type="button"
-        @click="count++"
-      >
+      <el-button @click="count++">
         count is {{ count }}
-      </button>
+      </el-button>
       <p>
         Edit
         <code>components/HelloWorld.vue</code> to test HMR
