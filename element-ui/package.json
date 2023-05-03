@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "babel-plugin-component": "^1.1.1",
+    "element-theme-chalk": "^2.15.13",
     "element-ui": "^2.15.13",
     "vue": "^2.7.10"
   },

@@ -1,11 +1,25 @@
 <script setup>
 import { ref } from 'vue';
+import { Notification } from 'element-ui';
 import pkg from '../../package.json';
+
+import 'element-theme-chalk/lib/button.css';
+import 'element-theme-chalk/lib/notification.css';
 
 const vueVersion = pkg.dependencies.vue;
 const viteVersion = pkg.devDependencies.vite;
 
 const count = ref(0);
+
+function handleClick () {
+  count.value++;
+
+  Notification({
+    title: 'Hello',
+    message: 'Hello World',
+    type: 'success'
+  });
+}
 </script>
 
 <template>
@@ -49,7 +63,7 @@ const count = ref(0);
     </ol>
 
     <div class="hello-world__card">
-      <el-button @click="count++">
+      <el-button @click="handleClick">
         count is {{ count }}
       </el-button>
       <p>
