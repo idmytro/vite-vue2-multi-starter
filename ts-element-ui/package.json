@@ -1,5 +1,5 @@
 {
-  "name": "element-ui",
+  "name": "vite-vue2-ts",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -11,16 +11,17 @@
   "dependencies": {
     "element-theme-chalk": "^2.15.13",
     "element-ui": "^2.15.13",
-    "vue": "^2.7.10"
+    "vue": "^2.7.14"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.2.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.3",
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@rollup/plugin-babel": "^5.2.2",
     "babel": "^6.23.0",
     "babel-plugin-component": "^1.1.1",
-    "@vitejs/plugin-vue2": "^1.1.2",
-    "vite": "^4.1.0",
     "vite4-plugin-babel": "^1.1.2"
   }
 }
