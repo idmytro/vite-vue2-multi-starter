@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { BButton } from 'bootstrap-vue';
 import pkg from '../../package.json';
 
 const tsVersion = pkg.devDependencies.typescript;
@@ -68,12 +69,11 @@ const count = ref(0);
     </ol>
 
     <div class="hello-world__card">
-      <button
-        type="button"
+      <BButton
         @click="count++"
       >
         count is {{ count }}
-      </button>
+      </BButton>
       <p>
         Edit
         <code>components/HelloWorld.vue</code> to test HMR

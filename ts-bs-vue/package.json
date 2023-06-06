@@ -1,7 +1,4 @@
 {
-  "name": "vite-vue2-ts",
-  "version": "1.0.0",
-  "description": "",
   "type": "module",
   "scripts": {
     "dev": "vite",
