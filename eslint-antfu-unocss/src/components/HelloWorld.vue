@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from 'vue';
-import pkg from '../../package.json';
+import { ref } from 'vue'
+import pkg from '../../package.json'
 
-const vueVersion = pkg.dependencies.vue;
-const viteVersion = pkg.devDependencies.vite;
+const vueVersion = pkg.dependencies.vue
+const viteVersion = pkg.devDependencies.vite
 
-const count = ref(0);
+const count = ref(0)
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const count = ref(0);
           <img
             src="/vite.svg"
             alt="Vite logo"
-          />
+          >
           <span>
             <strong>Vite</strong>
             <sup>{{ viteVersion }}</sup>
@@ -38,7 +38,7 @@ const count = ref(0);
           <img
             src="../assets/vue.svg"
             alt="Vue logo"
-          />
+          >
           <span>
             <small>+</small>
             <strong>Vue</strong>
