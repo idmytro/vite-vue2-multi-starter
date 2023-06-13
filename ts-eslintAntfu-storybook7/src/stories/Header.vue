@@ -1,3 +1,32 @@
+<script>
+import './header.css'
+import MyButton from './Button.vue'
+
+export default {
+  name: 'MyHeader',
+
+  components: { MyButton },
+
+  props: {
+    user: {
+      type: Object,
+    },
+  },
+
+  methods: {
+    onLogin () {
+      this.$emit('onLogin')
+    },
+    onLogout () {
+      this.$emit('onLogout')
+    },
+    onCreateAccount () {
+      this.$emit('onCreateAccount')
+    },
+  },
+}
+</script>
+
 <template>
   <header>
     <div class="storybook-header">
@@ -21,43 +50,11 @@
         <h1>Acme</h1>
       </div>
       <div>
-        <span class="welcome" v-if="user"
-          >Welcome, <b>{{ user.name }}</b
-          >!</span
-        >
-        <my-button size="small" @onClick="onLogout" label="Log out" v-if="user" />
-        <my-button size="small" @onClick="onLogin" label="Log in" v-if="!user" />
-        <my-button primary size="small" @onClick="onCreateAccount" label="Sign up" v-if="!user" />
+        <span v-if="user" class="welcome">Welcome, <b>{{ user.name }}</b>!</span>
+        <MyButton v-if="user" size="small" label="Log out" @onClick="onLogout" />
+        <MyButton v-if="!user" size="small" label="Log in" @onClick="onLogin" />
+        <MyButton v-if="!user" primary size="small" label="Sign up" @onClick="onCreateAccount" />
       </div>
     </div>
   </header>
 </template>
-
-<script>
-import './header.css';
-import MyButton from './Button.vue';
-
-export default {
-  name: 'my-header',
-
-  components: { MyButton },
-
-  props: {
-    user: {
-      type: Object,
-    },
-  },
-
-  methods: {
-    onLogin() {
-      this.$emit('onLogin');
-    },
-    onLogout() {
-      this.$emit('onLogout');
-    },
-    onCreateAccount() {
-      this.$emit('onCreateAccount');
-    },
-  },
-};
-</script>
