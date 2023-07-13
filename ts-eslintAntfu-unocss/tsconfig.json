@@ -35,12 +35,12 @@
     "noImplicitAny": false,
 
     /* Completeness */
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.vue",
-    "src/**/*.d.ts",
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "node_modules"
