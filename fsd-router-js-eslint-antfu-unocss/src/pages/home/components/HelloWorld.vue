@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import pkg from '../../package.json'
+import pkg from '../../../../package.json'
 
 const vueVersion = pkg.dependencies.vue
 const viteVersion = pkg.devDependencies.vite
