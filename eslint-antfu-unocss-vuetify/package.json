@@ -8,7 +8,8 @@
     "taze": "npx taze"
   },
   "dependencies": {
-    "vue": "^2.7.14"
+    "vue": "^2.7.14",
+    "vuetify": "^2.7.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.5",
