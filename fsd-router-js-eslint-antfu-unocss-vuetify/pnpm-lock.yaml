@@ -11,6 +11,9 @@ dependencies:
   vue-router:
     specifier: ^3.6.5
     version: 3.6.5(vue@2.7.14)
+  vuetify:
+    specifier: ^2.7.0
+    version: 2.7.0(vue@2.7.14)
 
 devDependencies:
   '@antfu/eslint-config':
@@ -3375,6 +3378,14 @@ packages:
     dependencies:
       '@vue/compiler-sfc': 2.7.14
       csstype: 3.1.0
+
+  /vuetify@2.7.0(vue@2.7.14):
+    resolution: {integrity: sha512-eDb+lbtB9e+FRbOPIIyXwgwgc2M6gvhHkhSgggzM0hmKh1XM34YStZbM865viH0AfpxGZIOsRcs0S+OtdyOB+Q==}
+    peerDependencies:
+      vue: ^2.6.4
+    dependencies:
+      vue: 2.7.14
+    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
