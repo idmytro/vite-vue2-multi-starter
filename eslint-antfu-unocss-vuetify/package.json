@@ -8,13 +8,15 @@
     "taze": "npx taze"
   },
   "dependencies": {
-    "vue": "^2.7.14"
+    "vue": "^2.7.14",
+    "vuetify": "^2.7.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.5",
     "@unocss/eslint-config": "^0.53.1",
     "@vitejs/plugin-vue2": "^2.2.0",
     "eslint": "^8.42.0",
+    "eslint-plugin-no-autofix": "^1.2.3",
     "typescript": "5.0.4",
     "unocss": "^0.53.1",
     "vite": "^4.3.9"
