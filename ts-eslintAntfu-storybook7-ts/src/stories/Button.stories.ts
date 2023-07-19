@@ -1,7 +1,7 @@
-import MyButton from './Button.vue';
+import { type Meta, type StoryObj } from '@storybook/vue'
+import MyButton from './Button.vue'
 
-// More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
-export default {
+const meta: Meta<typeof MyButton> = {
   title: 'Example/Button',
   component: MyButton,
   tags: ['autodocs'],
@@ -17,32 +17,35 @@ export default {
       options: ['small', 'medium', 'large'],
     },
   },
-};
+}
 
-// More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
-export const Primary = {
+export default meta
+
+type Story = StoryObj<typeof MyButton>
+
+export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
   },
-};
+}
 
-export const Secondary = {
+export const Secondary: Story = {
   args: {
     label: 'Button',
   },
-};
+}
 
-export const Large = {
+export const Large: Story = {
   args: {
     size: 'large',
     label: 'Button',
   },
-};
+}
 
-export const Small = {
+export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button',
   },
-};
+}
