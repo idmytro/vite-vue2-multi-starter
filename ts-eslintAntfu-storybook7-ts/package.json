@@ -7,16 +7,29 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.js,.vue"
+    "lint": "eslint . --ext .ts,.js,.vue",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "vue": "^2.7.14"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.5",
+    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-interactions": "^7.1.0",
+    "@storybook/addon-links": "^7.1.0",
+    "@storybook/blocks": "^7.1.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/vue": "^7.1.0",
+    "@storybook/vue-vite": "^7.1.0",
     "@vitejs/plugin-vue2": "^2.2.0",
     "eslint": "^8.42.0",
     "eslint-plugin-no-autofix": "^1.2.3",
+    "eslint-plugin-storybook": "^0.6.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.1.0",
     "typescript": "5.0.4",
     "vite": "^4.3.9"
   }
