@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import pkg from '../../../../package.json'
 
 const tsVersion = pkg.devDependencies.typescript

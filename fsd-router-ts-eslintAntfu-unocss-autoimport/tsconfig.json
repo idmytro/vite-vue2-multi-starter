@@ -17,7 +17,9 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": [],
+    "types": [
+      "vite/client"
+    ],
     "resolveJsonModule": true,
 
     /* Emit */
