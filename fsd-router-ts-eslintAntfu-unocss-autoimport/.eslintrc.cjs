@@ -11,10 +11,14 @@ module.exports = {
         name: 'vue',
         message: 'These modules are auto imported by vite plugin, we do not need to import them manually.',
         importNames: [
-          // types
-          'Component', 'ComponentPublicInstance', 'ComputedRef', 'InjectionKey', 'PropType', 'Ref', 'VNode',
-          // modules
+          'Component',
+          'ComponentPublicInstance',
+          'ComputedRef',
           'EffectScope',
+          'InjectionKey',
+          'PropType',
+          'Ref',
+          'VNode',
           'computed',
           'createApp',
           'customRef',
@@ -33,8 +37,6 @@ module.exports = {
           'nextTick',
           'onActivated',
           'onBeforeMount',
-          'onBeforeRouteLeave',
-          'onBeforeRouteUpdate',
           'onBeforeUnmount',
           'onBeforeUpdate',
           'onDeactivated',
@@ -74,6 +76,8 @@ module.exports = {
         name: 'vue-router',
         message: 'These modules are auto imported by vite plugin, we do not need to import them manually.',
         importNames: [
+          'onBeforeRouteLeave',
+          'onBeforeRouteUpdate',
           'useLink',
           'useRoute',
           'useRouter',
