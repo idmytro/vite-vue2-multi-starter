@@ -16,6 +16,9 @@ export default defineConfig({
         'vue-router',
       ],
       dts: true,
+      eslintrc: {
+        enabled: true,
+      },
     }),
   ],
   resolve: {

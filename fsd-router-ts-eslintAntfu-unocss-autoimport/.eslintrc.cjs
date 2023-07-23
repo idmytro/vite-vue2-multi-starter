@@ -1,5 +1,8 @@
 module.exports = {
-  extends: '@antfu',
+  extends: [
+    '@antfu',
+    './.eslintrc-auto-import.json',
+  ],
   plugins: ['no-autofix'],
   rules: {
     'space-before-function-paren': 0,
