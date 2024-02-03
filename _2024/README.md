@@ -1,5 +1,6 @@
-# Vue 3 + Vite + TS
+# 2024
 
 ```
-npx degit idmytro/vue3-multi-starter/_2024 myproject
+npx degit idmytro/vite-vue2-multi-starter/_2024 my-project
+
 ```
