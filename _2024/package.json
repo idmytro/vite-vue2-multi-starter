@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.58.3",
-    "vue": "^3.4.9"
+    "vue": "^2.7.14"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
     "@unocss/transformer-directives": "^0.58.3",
-    "@vitejs/plugin-vue": "^5.0.3",
+    "@vitejs/plugin-vue2": "^2.3.1",
     "eslint": "^8.56.0",
     "eslint-plugin-no-autofix": "^1.2.3",
     "typescript": "5.0.4",

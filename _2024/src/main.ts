@@ -1,8 +1,14 @@
-import { createApp } from 'vue'
+import Vue from 'vue'
 import App from './App.vue'
 
-import '@unocss/reset/tailwind-compat.css'
 import './style.css'
-import 'virtual:uno.css'
+import 'uno.css'
 
-createApp(App).mount('#app')
+Vue.config.productionTip = false
+Vue.config.devtools = true
+
+// eslint-disable-next-line no-new
+new Vue({
+  el: '#app',
+  render: h => h(App),
+})
