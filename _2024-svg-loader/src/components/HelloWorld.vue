@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import pkg from '../../package.json'
 import TSLogo from '../assets/ts-logo-128.svg?component'
+import VueLogo from '../assets/vue.svg?component'
 
 const tsVersion = pkg.devDependencies.typescript
 const vueVersion = pkg.dependencies.vue
@@ -35,12 +36,16 @@ const count = ref(0)
           href="https://vuejs.org/"
           target="_blank"
           rel="noopener noreferrer"
+          class="justify-center"
           style="--hover-color: #42b883aa;"
         >
-          <img
+          <!-- <img
             src="../assets/vue.svg"
             alt="Vue logo"
-          >
+          > -->
+          <span class="svg !w-auto">
+            <VueLogo class="scale-[calc(96/36)]" />
+          </span>
           <span>
             <small>+</small>
             <strong>Vue</strong>
@@ -55,12 +60,8 @@ const count = ref(0)
           rel="noopener noreferrer"
           style="--hover-color: #3278C7aa;"
         >
-          <!-- <img
-            src="../assets/ts-logo-128.svg"
-            alt="TS logo"
-          > -->
-          <span class="svg relative">
-            <TSLogo class="scale-75 origin-top-left" />
+          <span class="svg !w-auto">
+            <TSLogo class="scale-75 origin-top" />
           </span>
           <span>
             <small>+</small>
@@ -125,16 +126,15 @@ const count = ref(0)
   height: 96px;
   padding: 24px;
   will-change: filter;
+}
+
+.hello-world img {
   object-fit: contain;
 }
 
 .hello-world a:hover img,
 .hello-world a:hover svg {
   filter: drop-shadow(0 0 0.5em var(--hover-color));
-}
-
-.hello-world .svg {
-  width: 96px;
 }
 
 .hello-world sup {
