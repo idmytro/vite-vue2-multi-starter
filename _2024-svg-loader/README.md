@@ -1,6 +1,6 @@
 # 2024
 
 ```
-npx degit idmytro/vite-vue2-multi-starter/_2024 my-project
+npx degit idmytro/vite-vue2-multi-starter/_2024-svg-loader my-project
 
 ```
