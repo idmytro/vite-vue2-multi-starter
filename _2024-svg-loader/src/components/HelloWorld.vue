@@ -39,12 +39,8 @@ const count = ref(0)
           class="justify-center"
           style="--hover-color: #42b883aa;"
         >
-          <!-- <img
-            src="../assets/vue.svg"
-            alt="Vue logo"
-          > -->
           <span class="svg !w-auto">
-            <VueLogo class="scale-[calc(96/36)]" />
+            <VueLogo height="96" />
           </span>
           <span>
             <small>+</small>
@@ -61,7 +57,7 @@ const count = ref(0)
           style="--hover-color: #3278C7aa;"
         >
           <span class="svg !w-auto">
-            <TSLogo class="scale-75 origin-top" />
+            <TSLogo height="96" />
           </span>
           <span>
             <small>+</small>
