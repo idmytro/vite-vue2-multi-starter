@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import pkg from '../../package.json'
+import TSLogo from '../assets/ts-logo-128.svg?component'
 
 const tsVersion = pkg.devDependencies.typescript
 const vueVersion = pkg.dependencies.vue
@@ -54,10 +55,13 @@ const count = ref(0)
           rel="noopener noreferrer"
           style="--hover-color: #3278C7aa;"
         >
-          <img
+          <!-- <img
             src="../assets/ts-logo-128.svg"
             alt="TS logo"
-          >
+          > -->
+          <span class="svg relative">
+            <TSLogo class="scale-75 origin-top-left" />
+          </span>
           <span>
             <small>+</small>
             <strong>TS</strong>
@@ -116,15 +120,21 @@ const count = ref(0)
   padding: 0 0.5em;
 }
 
-.hello-world img {
+.hello-world img,
+.hello-world .svg {
   height: 96px;
   padding: 24px;
   will-change: filter;
   object-fit: contain;
 }
 
-.hello-world a:hover img {
+.hello-world a:hover img,
+.hello-world a:hover svg {
   filter: drop-shadow(0 0 0.5em var(--hover-color));
+}
+
+.hello-world .svg {
+  width: 96px;
 }
 
 .hello-world sup {
