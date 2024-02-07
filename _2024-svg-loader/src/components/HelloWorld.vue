@@ -39,7 +39,7 @@ const count = ref(0)
           class="justify-center"
           style="--hover-color: #42b883aa;"
         >
-          <span class="svg !w-auto">
+          <span class="svg">
             <VueLogo height="96" />
           </span>
           <span>
@@ -56,7 +56,7 @@ const count = ref(0)
           rel="noopener noreferrer"
           style="--hover-color: #3278C7aa;"
         >
-          <span class="svg !w-auto">
+          <span class="svg">
             <TSLogo height="96" />
           </span>
           <span>
