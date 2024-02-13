@@ -1,12 +1,27 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import pkg from '../../package.json'
+import type { Emits, Props } from './types'
+
+withDefaults(defineProps<Props>(), {
+  showVolarText: true,
+  showLogoText: true,
+})
+
+const emit = defineEmits<Emits>()
 
 const tsVersion = pkg.devDependencies.typescript
 const vueVersion = pkg.dependencies.vue
 const viteVersion = pkg.devDependencies.vite
 
 const count = ref(0)
+
+watch(
+  () => count.value,
+  (newValue) => {
+    emit('count-updated', newValue)
+  },
+)
 </script>
 
 <template>
@@ -80,7 +95,7 @@ const count = ref(0)
       </p>
     </div>
 
-    <p>
+    <p v-if="showVolarText">
       Install
       <a
         href="https://github.com/johnsoncodehk/volar"
@@ -89,8 +104,9 @@ const count = ref(0)
       >Volar</a>
       in your IDE for a better DX
     </p>
-    <p class="text-[red]">
-      Click on the Vite and Vue logos to learn more
+
+    <p v-if="showLogoText" class="text-[silver]">
+      Click on the logos to learn more
     </p>
   </div>
 </template>
