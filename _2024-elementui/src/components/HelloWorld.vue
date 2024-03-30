@@ -1,27 +1,26 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
+import Notification from 'element-ui/packages/notification'
+import ElButton from 'element-ui/lib/button'
 import pkg from '../../package.json'
-import type { Emits, Props } from './types'
 
-withDefaults(defineProps<Props>(), {
-  showVolarText: true,
-  showLogoText: true,
-})
+import 'element-theme-chalk/lib/button.css'
+import 'element-theme-chalk/lib/notification.css'
 
-const emit = defineEmits<Emits>()
-
-const tsVersion = pkg.devDependencies.typescript
 const vueVersion = pkg.dependencies.vue
 const viteVersion = pkg.devDependencies.vite
 
 const count = ref(0)
 
-watch(
-  () => count.value,
-  (newValue) => {
-    emit('count-updated', newValue)
-  },
-)
+function handleClick () {
+  count.value++
+
+  Notification({
+    title: 'Hello',
+    message: 'Hello World',
+    type: 'success',
+  })
+}
 </script>
 
 <template>
@@ -62,40 +61,19 @@ watch(
           </span>
         </a>
       </li>
-      <li>
-        <a
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="--hover-color: #3278C7aa;"
-        >
-          <img
-            src="../assets/ts-logo-128.svg"
-            alt="TS logo"
-          >
-          <span>
-            <small>+</small>
-            <strong>TS</strong>
-            <sup>{{ tsVersion }}</sup>
-          </span>
-        </a>
-      </li>
     </ol>
 
     <div class="hello-world__card">
-      <button
-        type="button"
-        @click="count++"
-      >
+      <ElButton @click="handleClick">
         count is {{ count }}
-      </button>
+      </ElButton>
       <p>
         Edit
         <code>components/HelloWorld.vue</code> to test HMR
       </p>
     </div>
 
-    <p v-if="showVolarText">
+    <p>
       Install
       <a
         href="https://github.com/johnsoncodehk/volar"
@@ -104,9 +82,8 @@ watch(
       >Volar</a>
       in your IDE for a better DX
     </p>
-
-    <p v-if="showLogoText" class="text-[silver]">
-      Click on the logos to learn more
+    <p class="hello-world__read-the-docs">
+      Click on the Vite and Vue logos to learn more
     </p>
   </div>
 </template>
@@ -162,5 +139,9 @@ watch(
 
 .hello-world__card {
   padding: 1em;
+}
+
+.hello-world__read-the-docs {
+  color: #888;
 }
 </style>
