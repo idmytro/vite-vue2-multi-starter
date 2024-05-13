@@ -1,7 +1,5 @@
 import type { StorybookConfig } from '@storybook/vue-vite'
 
-import 'uno.css'
-
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
