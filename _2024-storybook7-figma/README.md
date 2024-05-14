@@ -1,4 +1,4 @@
-# 2024
+# 2024-storybook7-figma
 
 ```
 npx degit idmytro/vite-vue2-multi-starter/_2024-storybook7-figma myproject
