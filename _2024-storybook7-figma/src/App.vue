@@ -7,12 +7,16 @@ function handleCountUpdated (count: number) {
   // eslint-disable-next-line no-console
   console.log('count updated', count)
 }
+
+const isFullscreen = ref(false)
 </script>
 
 <template>
   <div id="app">
     <HelloWorld
+      data-testid="hello-world"
       v-bind="{ showVolarText: false }"
+      :style="isFullscreen ? '--ms-lists-table-width: 100%' : '--ms-lists-table-width: var(--root-lists-body-width, 100%)'"
       @count-updated="handleCountUpdated"
     />
   </div>
