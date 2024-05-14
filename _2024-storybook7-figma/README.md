@@ -1,7 +1,7 @@
 # 2024
 
 ```
-npx degit idmytro/vite-vue2-multi-starter/official-2024-05 myproject
+npx degit idmytro/vite-vue2-multi-starter/_2024-storybook7-figma myproject
 
 ```
 
