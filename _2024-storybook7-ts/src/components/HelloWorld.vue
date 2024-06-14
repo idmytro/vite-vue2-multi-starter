@@ -26,7 +26,8 @@ watch(
 
 <template>
   <div class="hello-world">
-    <ol>
+    <!-- (property) React.HTMLAttributes<HTMLOListElement>.style?: React.CSSProperties | undefined -->
+    <ol :style="{}">
       <li>
         <a
           href="https://vitejs.dev"
