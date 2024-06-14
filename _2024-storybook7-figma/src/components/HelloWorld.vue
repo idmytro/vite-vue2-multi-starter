@@ -25,7 +25,7 @@ watch(
 </script>
 
 <template>
-  <div class="hello-world">
+  <div class="hello-world" :style="{}">
     <ol>
       <li>
         <a
