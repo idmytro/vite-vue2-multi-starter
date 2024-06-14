@@ -1,7 +1,7 @@
-# 2024
+# 2024 Storybook7 TS
 
 ```
-npx degit idmytro/vite-vue2-multi-starter/_2024 my-project
+npx degit idmytro/vite-vue2-multi-starter/_2024-storybook7-ts my-project
 
 ```
 
