@@ -1,54 +1,35 @@
-<template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
-</template>
+<script lang="ts" setup>
+import './button.css'
 
-<script>
-import './button.css';
+interface Props {
+  label: string
+  primary: boolean
+  size: 'small' | 'medium' | 'large'
+  backgroundColor?: string
+}
 
-export default {
-  name: 'my-button',
+const props = defineProps<Props>()
 
-  props: {
-    label: {
-      type: String,
-      required: true,
-    },
-    primary: {
-      type: Boolean,
-      default: false,
-    },
-    size: {
-      type: String,
-      default: 'medium',
-      validator: function (value) {
-        return ['small', 'medium', 'large'].indexOf(value) !== -1;
-      },
-    },
-    backgroundColor: {
-      type: String,
-    },
-  },
+const emit = defineEmits<(e: 'onClick') => void>()
 
-  computed: {
-    classes() {
-      return {
-        'storybook-button': true,
-        'storybook-button--primary': this.primary,
-        'storybook-button--secondary': !this.primary,
-        [`storybook-button--${this.size}`]: true,
-      };
-    },
-    style() {
-      return {
-        backgroundColor: this.backgroundColor,
-      };
-    },
-  },
+const classes = computed(() => ({
+  'storybook-button': true,
+  'storybook-button--primary': props.primary,
+  'storybook-button--secondary': !props.primary,
+  [`storybook-button--${props.size}`]: true,
+}))
 
-  methods: {
-    onClick() {
-      this.$emit('onClick');
-    },
-  },
-};
+const style = computed(() => ({
+  backgroundColor: props.backgroundColor,
+}))
+
+function onClick () {
+  emit('onClick')
+}
 </script>
+
+<template>
+  <button type="button" :class="classes" :style="style" @click="onClick">
+    {{ label }}
+  </button>
+</template>

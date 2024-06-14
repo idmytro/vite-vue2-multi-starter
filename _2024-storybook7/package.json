@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.js,.vue",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@unocss/reset": "^0.58.3",
