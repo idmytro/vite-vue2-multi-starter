@@ -32,12 +32,9 @@ watch(
           href="https://vitejs.dev"
           target="_blank"
           rel="noopener noreferrer"
-          style="--hover-color: #646cffaa;"
+          style="--hover-color: #646cffaa"
         >
-          <img
-            src="/vite.svg"
-            alt="Vite logo"
-          >
+          <img src="/vite.svg" alt="Vite logo">
           <span>
             <strong>Vite</strong>
             <sup>{{ viteVersion }}</sup>
@@ -49,12 +46,9 @@ watch(
           href="https://vuejs.org/"
           target="_blank"
           rel="noopener noreferrer"
-          style="--hover-color: #42b883aa;"
+          style="--hover-color: #42b883aa"
         >
-          <img
-            src="../assets/vue.svg"
-            alt="Vue logo"
-          >
+          <img src="../assets/vue.svg" alt="Vue logo">
           <span>
             <small>+</small>
             <strong>Vue</strong>
@@ -67,12 +61,9 @@ watch(
           href="https://www.typescriptlang.org/"
           target="_blank"
           rel="noopener noreferrer"
-          style="--hover-color: #3278C7aa;"
+          style="--hover-color: #3278c7aa"
         >
-          <img
-            src="../assets/ts-logo-128.svg"
-            alt="TS logo"
-          >
+          <img src="../assets/ts-logo-128.svg" alt="TS logo">
           <span>
             <small>+</small>
             <strong>TS</strong>
@@ -83,10 +74,7 @@ watch(
     </ol>
 
     <div class="hello-world__card">
-      <button
-        type="button"
-        @click="count++"
-      >
+      <button type="button" @click="count++">
         count is {{ count }}
       </button>
       <p>
@@ -113,54 +101,54 @@ watch(
 
 <style>
 .hello-world ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  font-size: 3.2em;
-  font-weight: 700;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 3.2em;
+    font-weight: 700;
 }
 
 .hello-world ol a {
-  color: inherit;
-  display: flex;
-  flex-direction: column;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
 .hello-world ol small {
-  padding: 0 0.5em;
+    padding: 0 0.5em;
 }
 
 .hello-world img {
-  height: 96px;
-  padding: 24px;
-  will-change: filter;
-  object-fit: contain;
+    height: 96px;
+    padding: 24px;
+    will-change: filter;
+    object-fit: contain;
 }
 
 .hello-world a:hover img {
-  filter: drop-shadow(0 0 0.5em var(--hover-color));
+    filter: drop-shadow(0 0 0.5em var(--hover-color));
 }
 
 .hello-world sup {
-  opacity: 0.5;
-  font-size: 50%;
+    opacity: 0.5;
+    font-size: 50%;
 }
 
 .hello-world small {
-  opacity: 0.75;
+    opacity: 0.75;
 }
 
 .hello-world a span {
-  transition: color 0.3s;
+    transition: color 0.3s;
 }
 
 .hello-world a:hover span {
-  color: var(--hover-color);
+    color: var(--hover-color);
 }
 
 .hello-world__card {
-  padding: 1em;
+    padding: 1em;
 }
 </style>
