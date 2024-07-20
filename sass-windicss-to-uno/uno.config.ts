@@ -1,6 +1,8 @@
 import { defineConfig } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 import presetWind from '@unocss/preset-wind'
+import presetUno from '@unocss/preset-uno'
+
 
 
 export default defineConfig({
@@ -8,6 +10,7 @@ export default defineConfig({
     transformerDirectives(),
   ],
   presets: [
+    // presetUno(),
     presetWind({
       preflight: false,
     }),

@@ -7,19 +7,21 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "w:b": "windicss 'index.html' 'src/**/*.vue' --config windi.config.cjs",
-    "u:b": "unocss 'index.html' 'src/**/*.vue'",
+    "w": "windicss 'index.html' 'src/**/*.vue' --config windi.config.cjs",
+    "u": "unocss 'index.html' 'src/**/*.vue' -c uno.config.ts",
+    "u2": "unocss 'index.html' 'src/**/*.vue'",
     "c:w": "cleancss -o windi.cc.css --format 'keep-breaks' --compatibility browserslist windi.css",
     "c:u": "cleancss -o uno.min.css --format 'keep-breaks' uno.css",
     "rep": "node replace-css-vars.cjs",
     "pp": "postcss windi.un.css -o windi.min.css",
-    "all": "npm run w:b && npm run u:b && npm run c:w && npm run c:u && npm run rep && npm run pp"
+    "all": "npm run w && npm run u && npm run c:w && npm run c:u && npm run rep && npm run pp"
   },
   "dependencies": {
     "vue": "^2.7.10"
   },
   "devDependencies": {
     "@unocss/cli": "latest",
+    "@unocss/preset-uno": "^0.61.5",
     "@unocss/preset-wind": "^0.61.5",
     "@unocss/transformer-directives": "^0.61.5",
     "@vitejs/plugin-vue2": "^1.1.2",

@@ -11,7 +11,7 @@ const count = ref(0);
 
 <template>
   <div class="hello-world">
-    <ol class="flex justify-center text-[3.2em] font-700">
+    <ol class="flex justify-center text-[3.2em] font-bold">
       <li>
         <a
           href="https://vitejs.dev"
@@ -41,7 +41,7 @@ const count = ref(0);
             alt="Vue logo"
           />
           <span>
-            <small>+</small>
+            <small class="px-[0.5em]">+</small>
             <strong>Vue</strong>
             <sup>{{ vueVersion }}</sup>
           </span>
@@ -59,7 +59,7 @@ const count = ref(0);
             alt="Windicss logo"
           />
           <span>
-            <small>+</small>
+            <small class="px-[0.5em]">+</small>
             <strong>Windicss</strong>
             <sup>{{ windicssVersion }}</sup>
           </span>
@@ -126,8 +126,6 @@ const count = ref(0);
 
 .hello-world small {
   opacity: 0.75;
-
-  @apply px-[0.5em];
 }
 
 .hello-world a span {

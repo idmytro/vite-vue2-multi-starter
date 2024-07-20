@@ -13,6 +13,9 @@ devDependencies:
   '@unocss/cli':
     specifier: latest
     version: 0.61.5
+  '@unocss/preset-uno':
+    specifier: ^0.61.5
+    version: 0.61.5
   '@unocss/preset-wind':
     specifier: ^0.61.5
     version: 0.61.5

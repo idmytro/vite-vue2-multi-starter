@@ -20,6 +20,10 @@
 .p-\[1em\] {
   padding: 1em;
 }
+.px-\[0\.5em\] {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
 .text-\[\#888\] {
   --tw-text-opacity: 1;
   color: rgba(136, 136, 136, var(--tw-text-opacity));
