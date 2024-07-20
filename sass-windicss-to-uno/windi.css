@@ -10,7 +10,7 @@
   -webkit-justify-content: center;
   justify-content: center;
 }
-.font-700 {
+.font-bold {
   font-weight: 700;
 }
 .text-\[3\.2em\] {
@@ -27,4 +27,7 @@
 .text-\[\#888\] {
   --tw-text-opacity: 1;
   color: rgba(136, 136, 136, var(--tw-text-opacity));
+}
+.font-size-12px {
+  font-size: 12px;
 }

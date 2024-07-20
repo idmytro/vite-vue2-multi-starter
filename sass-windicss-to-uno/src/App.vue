@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" class="font-size-12px">
     <HelloWorld />
   </div>
 </template>
