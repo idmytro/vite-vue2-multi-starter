@@ -11,7 +11,7 @@ const count = ref(0);
 
 <template>
   <div class="hello-world">
-    <ol class="flex justify-center text-[3.2em] font-bold">
+    <ol class="flex justify-center font-size-[3.2em] font-bold">
       <li>
         <a
           href="https://vitejs.dev"

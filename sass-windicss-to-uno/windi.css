@@ -13,10 +13,6 @@
 .font-bold {
   font-weight: 700;
 }
-.text-\[3\.2em\] {
-  font-size: 3.2em;
-  line-height: 1;
-}
 .p-\[1em\] {
   padding: 1em;
 }
@@ -30,4 +26,7 @@
 }
 .font-size-12px {
   font-size: 12px;
+}
+.font-size-\[3\.2em\] {
+  font-size: 3.2em;
 }
