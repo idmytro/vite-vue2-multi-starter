@@ -1,12 +1,6 @@
 import antfu from '@antfu/eslint-config'
-import noAutofix from 'eslint-plugin-no-autofix'
 
 export default antfu(
-  {
-    plugins: {
-      'no-autofix': noAutofix,
-    },
-  },
   {
     rules: {
       'style/space-before-function-paren': [
@@ -19,8 +13,8 @@ export default antfu(
       ],
       'ts/prefer-function-type': 2,
 
-      'unused-imports/no-unused-imports': 0, // look below
-      'no-autofix/unused-imports/no-unused-imports': 2,
+      // 'unused-imports/no-unused-imports': 0, // look below
+      // 'no-autofix/unused-imports/no-unused-imports': 2,
 
       'vue/custom-event-name-casing': 0,
     },
