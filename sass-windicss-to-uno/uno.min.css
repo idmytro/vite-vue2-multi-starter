@@ -1,0 +1,6 @@
+.flex{display:flex}
+.justify-center{justify-content:center}
+.p-\[1em\]{padding:1em}
+.px-\[0\.5em\]{padding-left:.5em;padding-right:.5em}
+.text-\[3\.2em\]{font-size:3.2em}
+.text-\[\#888\]{--un-text-opacity:1;color:rgb(136 136 136 / var(--un-text-opacity))}

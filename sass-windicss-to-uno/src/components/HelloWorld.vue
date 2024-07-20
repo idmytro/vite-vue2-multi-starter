@@ -41,7 +41,7 @@ const count = ref(0);
             alt="Vue logo"
           />
           <span>
-            <small class="px-[0.5em]">+</small>
+            <small>+</small>
             <strong>Vue</strong>
             <sup>{{ vueVersion }}</sup>
           </span>
@@ -59,7 +59,7 @@ const count = ref(0);
             alt="Windicss logo"
           />
           <span>
-            <small class="px-[0.5em]">+</small>
+            <small>+</small>
             <strong>Windicss</strong>
             <sup>{{ windicssVersion }}</sup>
           </span>
@@ -126,6 +126,8 @@ const count = ref(0);
 
 .hello-world small {
   opacity: 0.75;
+
+  @apply px-[0.5em];
 }
 
 .hello-world a span {
