@@ -13,9 +13,6 @@ export default antfu(
       ],
       'ts/prefer-function-type': 2,
 
-      // 'unused-imports/no-unused-imports': 0, // look below
-      // 'no-autofix/unused-imports/no-unused-imports': 2,
-
       'vue/custom-event-name-casing': 0,
     },
   },
