@@ -10,9 +10,10 @@ withDefaults(defineProps<Props>(), {
 
 const emit = defineEmits<Emits>()
 
-const tsVersion = pkg.devDependencies.typescript
 const vueVersion = pkg.dependencies.vue
 const viteVersion = pkg.devDependencies.vite
+const tsVersion = pkg.devDependencies.typescript
+const eslintVersion = pkg.devDependencies.eslint
 
 const count = ref(0)
 
@@ -68,6 +69,21 @@ watch(
             <small>+</small>
             <strong>TS</strong>
             <sup>{{ tsVersion }}</sup>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://eslint.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--hover-color: #4b32c3aa"
+        >
+          <img src="../assets/eslint.svg" alt="Eslint logo">
+          <span>
+            <small>+</small>
+            <strong>Eslint</strong>
+            <sup>{{ eslintVersion }}</sup>
           </span>
         </a>
       </li>
