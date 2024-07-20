@@ -11,8 +11,9 @@
     "u:b": "unocss 'index.html' 'src/**/*.vue'",
     "c:w": "cleancss -o windi.cc.css --format 'keep-breaks' --compatibility browserslist windi.css",
     "c:u": "cleancss -o uno.min.css --format 'keep-breaks' uno.css",
-    "pp": "postcss windi.cc.css -o windi.min.css",
-    "all": "npm run w:b && npm run u:b && npm run c:w && npm run c:u && npm run pp"
+    "rep": "node replace-css-vars.cjs",
+    "pp": "postcss windi.un.css -o windi.min.css",
+    "all": "npm run w:b && npm run u:b && npm run c:w && npm run c:u && npm run rep && npm run pp"
   },
   "dependencies": {
     "vue": "^2.7.10"
