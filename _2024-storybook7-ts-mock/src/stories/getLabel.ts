@@ -1,3 +1,4 @@
 export function getLabel () {
-  return 'Hello World'
+  console.log('default')
+  return 'Hello World 123'
 }

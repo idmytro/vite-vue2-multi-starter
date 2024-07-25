@@ -61,6 +61,9 @@ devDependencies:
   storybook:
     specifier: 7.6.19
     version: 7.6.19
+  storybook-addon-manual-mocks:
+    specifier: ^1.0.4
+    version: 1.0.4(vite@5.0.11)
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -9205,6 +9208,20 @@ packages:
 
   /store2@2.14.3:
     resolution: {integrity: sha512-4QcZ+yx7nzEFiV4BMLnr/pRa5HYzNITX2ri0Zh6sT9EyQHbBHacC6YigllUPU9X3D0f/22QCgfokpKs52YRrUg==}
+    dev: true
+
+  /storybook-addon-manual-mocks@1.0.4(vite@5.0.11):
+    resolution: {integrity: sha512-qOsmyJhTKW8ZpUjR91nYopXG+/1CkpA5HP3nDIoMUaYwedaeBgeLq+G7xr18AV+K9hDGwb5oho/gq1y7q0dIfA==}
+    peerDependencies:
+      vite: '*'
+      webpack: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      vite: 5.0.11
     dev: true
 
   /storybook@7.6.19:
