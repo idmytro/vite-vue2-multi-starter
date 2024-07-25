@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+import { getLabel } from './getLabel'
 import './button.css'
 
 interface Props {
-  label: string
+  label?: string
   primary: boolean
   size: 'small' | 'medium' | 'large'
   backgroundColor?: string
@@ -30,6 +31,6 @@ function onClick () {
 
 <template>
   <button type="button" :class="classes" :style="style" @click="onClick">
-    {{ label }}
+    {{ label ?? getLabel() }}
   </button>
 </template>
