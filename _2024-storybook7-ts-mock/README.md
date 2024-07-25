@@ -1,7 +1,7 @@
-# 2024 Storybook7 TS
+# 2024 Storybook7 TS + Mocks
 
 ```
-npx degit idmytro/vite-vue2-multi-starter/_2024-storybook7-ts my-project
+npx degit idmytro/vite-vue2-multi-starter/_2024-storybook7-ts-mock my-project
 
 ```
 
