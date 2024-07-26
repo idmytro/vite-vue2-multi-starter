@@ -13,7 +13,7 @@ export default antfu(
       ],
       'ts/prefer-function-type': 2,
 
-      'vue/custom-event-name-casing': 0,
+      'vue/custom-event-name-casing': [2, 'kebab-case'],
     },
   },
 )
