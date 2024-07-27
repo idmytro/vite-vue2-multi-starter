@@ -16,6 +16,9 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.23.0
     version: 2.23.0(@vue/compiler-sfc@3.4.33)(eslint@9.7.0)(typescript@5.4.2)
+  '@unocss/cli':
+    specifier: 0.60.0
+    version: 0.60.0
   '@unocss/transformer-directives':
     specifier: ^0.61.5
     version: 0.61.5
@@ -31,6 +34,9 @@ devDependencies:
   unocss:
     specifier: ^0.61.5
     version: 0.61.5(postcss@8.4.39)(vite@5.3.4)
+  unocss-preset-scrollbar-hide:
+    specifier: ^1.0.1
+    version: 1.0.1(unocss@0.61.5)
   unplugin-auto-import:
     specifier: ^0.18.0
     version: 0.18.0
@@ -1411,6 +1417,28 @@ packages:
       - rollup
     dev: true
 
+  /@unocss/cli@0.60.0:
+    resolution: {integrity: sha512-TzBhbOfd7Rl+NsqHjQSFLoc8aMJcfRRMZ3BXuIa3EhGuT0r4e1H7CENUQXl7ijNLVL9XL2SyrV68cDvEeQfMZA==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@ampproject/remapping': 2.3.0
+      '@rollup/pluginutils': 5.1.0
+      '@unocss/config': 0.60.0
+      '@unocss/core': 0.60.0
+      '@unocss/preset-uno': 0.60.0
+      cac: 6.7.14
+      chokidar: 3.6.0
+      colorette: 2.0.20
+      consola: 3.2.3
+      fast-glob: 3.3.2
+      magic-string: 0.30.10
+      pathe: 1.1.2
+      perfect-debounce: 1.0.0
+    transitivePeerDependencies:
+      - rollup
+    dev: true
+
   /@unocss/cli@0.61.5:
     resolution: {integrity: sha512-Y5mKSoQGEYRmjUi5Tia3EesQbLgQTTPGmeE7LFrbeyP1c7PDiW3wSR5fRNZ7PBrr6/C5oo2sId3MhWJQl3tFSA==}
     engines: {node: '>=14'}
@@ -1433,6 +1461,14 @@ packages:
       - rollup
     dev: true
 
+  /@unocss/config@0.60.0:
+    resolution: {integrity: sha512-y8zTM/qhZ5p2zhtgjsqL4BDjDXes1i72kNts/A85adNTx9ffZG+0dbrH2DLoBKp6aAb51AOo5OcG5cllSbNrDQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.60.0
+      unconfig: 0.3.13
+    dev: true
+
   /@unocss/config@0.61.5:
     resolution: {integrity: sha512-VIIln/1aD9cqU95+3IVZG9U1yO7Ys6RqyqtgD5pIJ77rg57v/2sey+S2ScFx3KB24Bal3FxAgHA5CdjFpQZldA==}
     engines: {node: '>=14'}
@@ -1441,8 +1477,18 @@ packages:
       unconfig: 0.3.13
     dev: true
 
+  /@unocss/core@0.60.0:
+    resolution: {integrity: sha512-i1j5i/4xiCfogobaOdQCQUEy/Ch8mBtKgpfUIreJtElaF15uIjT2t/G0y7qUz87ZNl+wJoPcWkcSC92HVnjXwg==}
+    dev: true
+
   /@unocss/core@0.61.5:
     resolution: {integrity: sha512-hB8zr2rnrCzz9x8ho2SAXQiYTEjwAPMiBzpaEe2C0+CFWeL1179h9508YVyZHHAzMyZILIG9YrVAWrrMdt2/Xg==}
+    dev: true
+
+  /@unocss/extractor-arbitrary-variants@0.60.0:
+    resolution: {integrity: sha512-f6o2KsCP+BYzYRjeBkjiquh5eM1oRv/wNu1a1triNk9pmmD3nUWRY0ImaXRkSbgHpAjVEDloOpqPdMTO408ePg==}
+    dependencies:
+      '@unocss/core': 0.60.0
     dev: true
 
   /@unocss/extractor-arbitrary-variants@0.61.5:
@@ -1491,6 +1537,14 @@ packages:
       - supports-color
     dev: true
 
+  /@unocss/preset-mini@0.60.0:
+    resolution: {integrity: sha512-N0XqjuMRjtRUYeE5ELxOcraEwUWkhQum+qIhr0ZZCCoGQpa/u1MRCkwNcBSEy70HZMoyesYVtxiOz0CgAWRSQw==}
+    dependencies:
+      '@unocss/core': 0.60.0
+      '@unocss/extractor-arbitrary-variants': 0.60.0
+      '@unocss/rule-utils': 0.60.0
+    dev: true
+
   /@unocss/preset-mini@0.61.5:
     resolution: {integrity: sha512-gVm7Z9X0krx8CK/+pKAqcVmpqzRk1+SH7bfgRxKtKhyFSxJlwpjNp1rKm3gCT0F1Tlp3d8aufYRksaXGZhs8Ow==}
     dependencies:
@@ -1512,6 +1566,15 @@ packages:
       '@unocss/preset-mini': 0.61.5
     dev: true
 
+  /@unocss/preset-uno@0.60.0:
+    resolution: {integrity: sha512-aMoja25jfz80N/TYysMe1RAy0yhONUgl3Eh3Z4EIJrdsHXxuBicO1Wa/EbI8Mc4dY+NPETTC/5JF1SH+yWihGA==}
+    dependencies:
+      '@unocss/core': 0.60.0
+      '@unocss/preset-mini': 0.60.0
+      '@unocss/preset-wind': 0.60.0
+      '@unocss/rule-utils': 0.60.0
+    dev: true
+
   /@unocss/preset-uno@0.61.5:
     resolution: {integrity: sha512-CflB0l9CeZx+b/Q8mA4Ow4d63Caf+vFJ+1EGA06jG9qYjPLy76Rkci//0m9cEtO+vPnYtgLc7HZAZv0X6wh4Tg==}
     dependencies:
@@ -1528,6 +1591,14 @@ packages:
       ofetch: 1.3.4
     dev: true
 
+  /@unocss/preset-wind@0.60.0:
+    resolution: {integrity: sha512-utfAJ15tfnPg9r5rfCnBwGRMvhtFiqp8f/YQdrREsnAJRqcfzA6E2Tdh67GyOjPRBjNusw+WmV4K2tltzKbdOQ==}
+    dependencies:
+      '@unocss/core': 0.60.0
+      '@unocss/preset-mini': 0.60.0
+      '@unocss/rule-utils': 0.60.0
+    dev: true
+
   /@unocss/preset-wind@0.61.5:
     resolution: {integrity: sha512-n4uepxv3gVoVQb0tv7iV8M4W0CgwLw0QaMX+3ECYzFLMynjCkZmFDtdQAX720yTvLZxwCxEZfQCgydOSt0qjZA==}
     dependencies:
@@ -1542,6 +1613,14 @@ packages:
 
   /@unocss/reset@0.61.5:
     resolution: {integrity: sha512-5FKNsHnke9J1Z0T4prOZn9hkWh86c6Px+Oh3xf8mDd6dDw8CjzYMRxZEKti0gt13NcsO29G1vLGM7UjG1sCamg==}
+    dev: true
+
+  /@unocss/rule-utils@0.60.0:
+    resolution: {integrity: sha512-YDXSUQceqMSVG51F5yTTPSadrV7YrbRX3VnaSE5NopyyYKRWT6/0dl68riTOjtJfVcm55vl7ZhwNFobAdtOfYA==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.60.0
+      magic-string: 0.30.10
     dev: true
 
   /@unocss/rule-utils@0.61.5:
@@ -3814,6 +3893,20 @@ packages:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.10
+    dev: true
+
+  /unocss-preset-scrollbar-hide@1.0.1(unocss@0.61.5):
+    resolution: {integrity: sha512-U+JcxAMhgvI14ZtveQBRSbyYGkgYRDlOJzAW2pUbrTvsGZwTyb3dWLvNiMdtN4s1dFEGMCBRAgnoBPLh21APPQ==}
+    peerDependencies:
+      '@unocss/nuxt': ^0.40.0
+      unocss: ^0.40.0
+    peerDependenciesMeta:
+      '@unocss/nuxt':
+        optional: true
+      unocss:
+        optional: true
+    dependencies:
+      unocss: 0.61.5(postcss@8.4.39)(vite@5.3.4)
     dev: true
 
   /unocss@0.61.5(postcss@8.4.39)(vite@5.3.4):
