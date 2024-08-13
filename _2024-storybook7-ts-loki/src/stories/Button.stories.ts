@@ -1,12 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/vue'
+import { action } from '@storybook/addon-actions'
 
 import Button from './Button.vue'
 
-const meta: Meta<typeof Button> = {
-  component: Button,
-}
-
+const meta: Meta<typeof Button> = { component: Button }
 export default meta
+
 type Story = StoryObj<typeof Button>
 
 /*
@@ -15,13 +14,22 @@ type Story = StoryObj<typeof Button>
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args, { argTypes }) => ({
+  render: (_args, { argTypes }) => ({
     components: { Button },
     props: Object.keys(argTypes),
-    template: '<Button v-bind="$props" v-on="$props" />',
+    setup () {
+      return { action }
+    },
+    template: `
+      <Button
+        v-bind="$props"
+        @click="action('click')({})"
+      />
+    `,
   }),
   args: {
     primary: true,
     label: 'Button',
+    size: 'medium',
   },
 }
