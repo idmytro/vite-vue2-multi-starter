@@ -7,6 +7,14 @@ const viteVersion = pkg.devDependencies.vite;
 const windicssVersion = pkg.devDependencies.windicss;
 
 const count = ref(0);
+
+const classNames = computed(() => {
+  return [
+    'MsBrickButton',
+    props.isLoading ? 'MsBrickButton--isLoading' : 'MsBrickButton--isIdle',
+    '| h-46px w-46px flex items-center transition-colors justify-center',
+  ];
+});
 </script>
 
 <template>
