@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import pkg from '../../package.json'
+import Button from '../stories/Button.vue'
 import type { Emits, Props } from './types'
 
 withDefaults(defineProps<Props>(), {
@@ -84,12 +85,16 @@ watch(
     </ol>
 
     <div class="hello-world__card">
-      <button
-        type="button"
+      <Button
+        v-bind="{
+          label: `count is ${count}`,
+          primary: true,
+          size: 'large',
+        }"
+
         @click="count++"
-      >
-        count is {{ count }}
-      </button>
+      />
+
       <p>
         Edit
         <code>components/HelloWorld.vue</code> to test HMR
