@@ -10,7 +10,7 @@ interface Props {
 
 const props = defineProps<Props>()
 
-const emit = defineEmits<(e: 'onClick') => void>()
+const emit = defineEmits<(e: 'click') => void>()
 
 const classes = computed(() => ({
   'storybook-button': true,
@@ -24,7 +24,7 @@ const style = computed(() => ({
 }))
 
 function onClick () {
-  emit('onClick')
+  emit('click')
 }
 </script>
 

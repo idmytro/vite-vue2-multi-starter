@@ -52,12 +52,6 @@ devDependencies:
   eslint-plugin-storybook:
     specifier: ^0.8.0
     version: 0.8.0(eslint@8.57.0)(typescript@5.0.4)
-  react:
-    specifier: ^18.3.1
-    version: 18.3.1
-  react-dom:
-    specifier: ^18.3.1
-    version: 18.3.1(react@18.3.1)
   storybook:
     specifier: 7.6.19
     version: 7.6.19
@@ -5506,7 +5500,7 @@ packages:
       postcss-modules-scope: 3.2.0(postcss@8.4.33)
       postcss-modules-values: 4.0.0(postcss@8.4.33)
       postcss-value-parser: 4.2.0
-      semver: 7.5.4
+      semver: 7.6.3
     dev: true
 
   /css-tree@2.3.1:
