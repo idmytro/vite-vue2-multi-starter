@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useFloating } from '@floating-ui/vue'
+
 import './button.css'
 
 interface Props {
@@ -11,6 +13,10 @@ interface Props {
 const props = defineProps<Props>()
 
 const emit = defineEmits<(e: 'click') => void>()
+
+const reference = ref(null)
+const floating = ref(null)
+const { floatingStyles } = useFloating(reference, floating)
 
 const classes = computed(() => ({
   'storybook-button': true,
@@ -29,7 +35,19 @@ function onClick () {
 </script>
 
 <template>
-  <button type="button" :class="classes" :style="style" @click="onClick">
-    {{ label }}
-  </button>
+  <span>
+    <button
+      ref="reference"
+      type="button"
+      :class="classes"
+      :style="style"
+      @click="onClick"
+    >
+      {{ label }}
+    </button>
+
+    <span ref="floating" :style="floatingStyles">
+      Tooltip
+    </span>
+  </span>
 </template>
