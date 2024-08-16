@@ -1,22 +1,18 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 
-function handleCountUpdated (count: number) {
-  // eslint-disable-next-line no-console
-  console.log('count updated', count)
-}
 </script>
 
 <template>
-  <!-- <div id="app">
-    <HelloWorld
-      v-bind="{ showVolarText: false }"
-      @count-updated="handleCountUpdated"
-    />
-  </div> -->
+  <div id="app" class="space-y-1em">
+    <nav>
+      <router-link to="/">
+        Home
+      </router-link> |
+      <router-link to="/about">
+        About
+      </router-link>
+    </nav>
 
-  <div id="app">
     <router-view />
-    <!-- ??? -->
   </div>
 </template>
