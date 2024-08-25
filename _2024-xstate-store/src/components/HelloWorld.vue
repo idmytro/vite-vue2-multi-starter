@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import pkg from '../../package.json'
+import { demoStore as store } from '../stores/demo'
 import type { Emits, Props } from './types'
 
 withDefaults(defineProps<Props>(), {
@@ -15,14 +16,18 @@ const viteVersion = pkg.devDependencies.vite
 const tsVersion = pkg.devDependencies.typescript
 const eslintVersion = pkg.devDependencies.eslint
 
-const count = ref(0)
+const count = ref(store.getSnapshot().context.count)
+const ctx = ref(store.getSnapshot().context)
 
-watch(
-  () => count.value,
-  (newValue) => {
-    emit('count-updated', newValue)
-  },
-)
+store.subscribe(({ context }) => {
+  count.value = context.count
+  ctx.value = context
+  emit('count-updated', count.value)
+})
+
+function increment (): void {
+  store.send({ type: 'inc' })
+}
 </script>
 
 <template>
@@ -90,8 +95,11 @@ watch(
     </ol>
 
     <div class="hello-world__card">
-      <button type="button" @click="count++">
+      <button type="button" @click="increment">
         count is {{ count }}
+      </button>
+      <button type="button" @click="increment">
+        count is {{ ctx.count }}
       </button>
       <p>
         Edit
