@@ -8,6 +8,12 @@ dependencies:
   '@unocss/reset':
     specifier: ^0.58.9
     version: 0.58.9
+  '@xstate/store':
+    specifier: ^2.2.1
+    version: 2.2.1
+  immer:
+    specifier: ^10.1.1
+    version: 10.1.1
   vue:
     specifier: ^2.7.16
     version: 2.7.16
@@ -1714,6 +1720,15 @@ packages:
     resolution: {integrity: sha512-aoRY0jQk3A/cuvdkodTrM4NMfxco8n55eG4H7ML/CRy7OryHfiqvug4xrCBBMbbN+dvXAetDDwZW9DXWWjBntA==}
     dev: true
 
+  /@xstate/store@2.2.1:
+    resolution: {integrity: sha512-1wZFrvHSCiyRDIwCcWa1k9XsvjqIVz/U4rcvlfSQZ8bMschQ4bqm0DHLRFQV45mFLTtGcVnV9+76+/6i+BUz5g==}
+    peerDependencies:
+      react: ^18.2.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dev: false
+
   /acorn-jsx@5.3.2(acorn@8.12.1):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -2809,6 +2824,10 @@ packages:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
     dev: true
+
+  /immer@10.1.1:
+    resolution: {integrity: sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw==}
+    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}

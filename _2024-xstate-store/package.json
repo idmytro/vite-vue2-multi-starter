@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.58.9",
+    "@xstate/store": "^2.2.1",
+    "immer": "^10.1.1",
     "vue": "^2.7.16"
   },
   "devDependencies": {
