@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.58.3",
+    "element-theme-chalk": "^2.15.13",
+    "element-ui": "^2.15.13",
     "vue": "^2.7.14"
   },
   "devDependencies": {
