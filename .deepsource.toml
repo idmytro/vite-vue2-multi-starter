@@ -7,6 +7,7 @@ name = "javascript"
   plugins = ["vue"]
   environment = [
     "browser",
-    "nodejs",
-    "vitest"
+    "vitest",
+    "cypress",
+    "nodejs"
   ]
