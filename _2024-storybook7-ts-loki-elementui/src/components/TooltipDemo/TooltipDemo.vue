@@ -7,7 +7,7 @@ import ElTooltip from 'element-ui/lib/tooltip'
 </script>
 
 <template>
-  <div class="space-x-10px pt-2em">
+  <div class="space-x-10px pt-4em">
     <ElTooltip content="Top center" placement="top">
       <ElButton>Dark</ElButton>
     </ElTooltip>
