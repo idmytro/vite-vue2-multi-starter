@@ -16,6 +16,12 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.25.1
     version: 2.25.1(@vue/compiler-sfc@3.4.13)(eslint@8.57.0)(typescript@5.0.4)
+  '@loki/create-async-callback':
+    specifier: 0.35.0
+    version: 0.35.0
+  '@loki/is-loki-running':
+    specifier: 0.35.0
+    version: 0.35.0
   '@storybook/addon-actions':
     specifier: 7.6.19
     version: 7.6.19
@@ -2465,6 +2471,15 @@ packages:
       shelljs: 0.8.5
     dev: true
 
+  /@loki/create-async-callback@0.35.0:
+    resolution: {integrity: sha512-NUlJw/1x0SjqzrKPCpEHmOa0/GPz5b2w0WDwxbqtpxetmm0+U3BPtO7CeWFoBAiohqCj9TFZH4Qn9wo9cLoJWQ==}
+    dependencies:
+      '@loki/integration-react-native': 0.35.0
+    transitivePeerDependencies:
+      - '@storybook/addons'
+      - '@storybook/react-native'
+    dev: true
+
   /@loki/diff-graphics-magick@0.35.0:
     resolution: {integrity: sha512-Rwt30i3jSPBS/6WPPhqQN1mWAys9viyKvRlhl+GQYcPoIrs70rNSYQaAB4/J54Vips/TGxJJAYZ6caq1Ey9s6w==}
     dependencies:
@@ -2529,6 +2544,10 @@ packages:
     dependencies:
       '@loki/browser': 0.35.0
       '@storybook/vue': 7.6.19(@babel/core@7.23.7)(css-loader@7.1.1)(vue@2.7.16)
+    dev: true
+
+  /@loki/is-loki-running@0.35.0:
+    resolution: {integrity: sha512-QdeCn/+OwNRm1F9VTDGyhu1dEhHT2rgPH7+cGuTVLRceE/VBKx1qi6WWEP6sR8n2XYclFeqNvJgabg6AMYvkMw==}
     dev: true
 
   /@loki/runner@0.35.0:

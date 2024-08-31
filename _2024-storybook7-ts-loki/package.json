@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.25.1",
+    "@loki/create-async-callback": "0.35.0",
+    "@loki/is-loki-running": "0.35.0",
     "@storybook/addon-actions": "7.6.19",
     "@storybook/addon-essentials": "7.6.19",
     "@storybook/addon-interactions": "7.6.19",
