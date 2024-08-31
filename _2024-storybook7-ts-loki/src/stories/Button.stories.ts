@@ -18,13 +18,26 @@ export const Primary: Story = {
     components: { Button },
     props: Object.keys(argTypes),
     setup () {
-      return { action }
+      const clicked = ref(false)
+
+      function handleClick () {
+        clicked.value = true
+        action('click')({})
+      }
+
+      return {
+        clicked,
+        handleClick,
+      }
     },
     template: `
+    <div>
       <Button
         v-bind="$props"
-        @click="action('click')({})"
+        @click="handleClick"
       />
+      <p>Clicked? {{ clicked ? 'Yes' : 'No' }}</p>
+    </div>
     `,
   }),
   args: {
