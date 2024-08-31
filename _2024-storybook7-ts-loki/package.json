@@ -25,6 +25,7 @@
     "@storybook/addon-links": "7.6.19",
     "@storybook/blocks": "7.6.19",
     "@storybook/test": "7.6.19",
+    "@storybook/testing-library": "^0.1.0",
     "@storybook/vue": "7.6.19",
     "@storybook/vue-vite": "7.6.19",
     "@unocss/transformer-directives": "^0.58.3",

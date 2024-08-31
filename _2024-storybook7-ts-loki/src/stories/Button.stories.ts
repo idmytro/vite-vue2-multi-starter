@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
+import createAsyncCallback from '@loki/create-async-callback'
+import { userEvent } from '@storybook/testing-library'
+import { enableEventsForLoki } from '../testing/loki'
 
 import Button from './Button.vue'
 
@@ -7,6 +10,21 @@ const meta: Meta<typeof Button> = { component: Button }
 export default meta
 
 type Story = StoryObj<typeof Button>
+
+async function doClick ({ canvasElement }: { canvasElement: HTMLElement }): Promise<void> {
+  const button = canvasElement.querySelector('.storybook-button')
+  if (!button)
+    return
+
+  await enableEventsForLoki()
+
+  try {
+    await userEvent.click(button)
+  }
+  finally {
+    createAsyncCallback()()
+  }
+}
 
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -45,4 +63,5 @@ export const Primary: Story = {
     label: 'Button',
     size: 'medium',
   },
+  play: doClick,
 }
