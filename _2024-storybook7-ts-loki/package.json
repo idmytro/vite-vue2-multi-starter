@@ -32,7 +32,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-no-autofix": "^1.2.3",
     "eslint-plugin-storybook": "^0.8.0",
-    "loki": "^0.35.0",
+    "loki": "0.35.0",
     "storybook": "7.6.19",
     "typescript": "5.0.4",
     "unocss": "^0.58.3",
