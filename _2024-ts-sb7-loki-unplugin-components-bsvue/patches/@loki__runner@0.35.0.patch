@@ -1,0 +1,72 @@
+diff --git a/src/commands/test/test-batch.js b/src/commands/test/test-batch.js
+index 51b9ca9b13cb40ce4421fca9e12019c27349e9c5..88e51a9dcf5b43e706b9ba5b8d7aa837fa78b280 100644
+--- a/src/commands/test/test-batch.js
++++ b/src/commands/test/test-batch.js
+@@ -35,32 +35,45 @@ function testBatch(target, batch, options, tolerance) {
+       .catch((error) => resolvers.forEach(([, reject]) => reject(error)));
+     return promises;
+   }
+-  return batch.map(
+-    async ({
+-      configuration,
+-      configurationName,
+-      id,
+-      kind,
+-      story,
+-      parameters,
+-    }) => {
+-      const screenshot = await target.captureScreenshotForStory(
+-        id,
+-        options,
++  return batch
++    .filter(({ configurationName, parameters }) => {
++      const configurationFilter = parameters.loki?.configurationFilter;
++
++      if (configurationFilter) {
++        const testConfiguration = new RegExp(configurationFilter);
++
++        if (!testConfiguration.test(configurationName)) {
++          return false;
++        }
++      }
++      return true;
++    })
++    .map(
++      async ({
+         configuration,
+-        parameters
+-      );
+-      return compareScreenshot(
+-        screenshot,
+-        options,
+-        tolerance,
+         configurationName,
++        id,
+         kind,
+         story,
+-        parameters
+-      );
+-    }
+-  );
++        parameters,
++      }) => {
++        const screenshot = await target.captureScreenshotForStory(
++          id,
++          options,
++          configuration,
++          parameters
++        );
++        return compareScreenshot(
++          screenshot,
++          options,
++          tolerance,
++          configurationName,
++          kind,
++          story,
++          parameters
++        );
++      }
++    );
+ }
+ 
+ module.exports = testBatch;

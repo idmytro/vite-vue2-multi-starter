@@ -25,6 +25,9 @@ devDependencies:
   '@loki/is-loki-running':
     specifier: 0.35.0
     version: 0.35.0
+  '@loki/runner':
+    specifier: 0.35.0
+    version: 0.35.0
   '@storybook/addon-actions':
     specifier: 7.6.19
     version: 7.6.19
@@ -2429,7 +2432,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
@@ -2467,7 +2470,7 @@ packages:
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
 
   /@juggle/resize-observer@3.4.0:
