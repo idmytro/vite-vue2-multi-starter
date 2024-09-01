@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import pkg from '../../package.json'
 import Button from '../stories/Button.vue'
 import type { Emits, Props } from './types'
