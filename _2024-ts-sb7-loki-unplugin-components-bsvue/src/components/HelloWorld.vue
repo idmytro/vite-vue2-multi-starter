@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import pkg from '../../package.json'
-import Button from '../stories/Button.vue'
 import type { Emits, Props } from './types'
 
 withDefaults(defineProps<Props>(), {
