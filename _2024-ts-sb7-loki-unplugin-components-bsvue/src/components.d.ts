@@ -8,6 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BButton: typeof import('bootstrap-vue')['BButton']
+    BTooltip: typeof import('bootstrap-vue')['BTooltip']
+    ButtonWithTooltip: typeof import('./components/ButtonWithTooltip/ButtonWithTooltip.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
   }
 }
