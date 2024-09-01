@@ -1,0 +1,29 @@
+{
+  "name": "official-2024-05",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "vue": "^2.7.16"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.0.0",
+    "@unocss/eslint-plugin": "^0.62.3",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "eslint": "9.9.1",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.18.2",
+    "vite": "^5.4.2",
+    "vue-tsc": "^2.1.2"
+  }
+}
