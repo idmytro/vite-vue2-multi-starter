@@ -25,8 +25,7 @@ watch(
 
 <template>
   <div class="hello-world">
-    <!-- (property) React.HTMLAttributes<HTMLOListElement>.style?: React.CSSProperties | undefined -->
-    <ol :style="{}">
+    <ol>
       <li>
         <a
           href="https://vitejs.dev"
@@ -83,9 +82,13 @@ watch(
     </ol>
 
     <div class="hello-world__card">
-      <b-button @click="count++">
+      <b-button id="tooltip-target-1" @click="count++">
         count is {{ count }}
       </b-button>
+
+      <b-tooltip target="tooltip-target-1" triggers="hover">
+        I am tooltip <b>component</b> content!
+      </b-tooltip>
 
       <p>
         Edit
