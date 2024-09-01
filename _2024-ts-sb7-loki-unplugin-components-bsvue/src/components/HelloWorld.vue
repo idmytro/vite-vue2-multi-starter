@@ -84,15 +84,9 @@ watch(
     </ol>
 
     <div class="hello-world__card">
-      <Button
-        v-bind="{
-          label: `count is ${count}`,
-          primary: true,
-          size: 'large',
-        }"
-
-        @click="count++"
-      />
+      <b-button @click="count++">
+        count is {{ count }}
+      </b-button>
 
       <p>
         Edit

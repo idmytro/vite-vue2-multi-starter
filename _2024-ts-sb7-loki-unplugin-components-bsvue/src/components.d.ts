@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BButton: typeof import('bootstrap-vue')['BButton']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
   }
 }
