@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.58.9",
-    "vue": "^2.7.16"
+    "vue": "^2.7.16",
+    "vuex": "3.6.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.23.0",
