@@ -1,5 +1,7 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
 import App from './App.vue'
+import { store } from './store'
 
 import './style.css'
 import 'uno.css'
@@ -11,4 +13,5 @@ Vue.config.devtools = true
 new Vue({
   el: '#app',
   render: h => h(App),
+  store,
 })
