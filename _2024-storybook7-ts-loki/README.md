@@ -1,4 +1,4 @@
-# 2024 Storybook7 TS
+# 2024 Storybook7 TS Loki
 
 ```
 npx degit idmytro/vite-vue2-multi-starter/_2024-storybook7-ts-loki my-project
