@@ -7,7 +7,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "depscheck": "npx taze",
+    "depscheck2": "npx taze major"
   },
   "dependencies": {
     "@unocss/reset": "^0.58.9",
