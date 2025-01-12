@@ -7,7 +7,7 @@ npx degit idmytro/vite-vue2-multi-starter/minimal myproject
 OR
 
 ```
-npx degit idmytro/vite-vue2-multi-starter/_2024 myproject
+npx degit idmytro/vite-vue2-multi-starter/_2025 myproject
 ```
 
 
