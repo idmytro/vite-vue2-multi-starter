@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@unocss/reset':
-    specifier: ^0.58.9
-    version: 0.58.9
+    specifier: ^65.4.0
+    version: 65.4.0
   vue:
     specifier: ^2.7.16
     version: 2.7.16
@@ -30,10 +30,10 @@ devDependencies:
     version: 5.7.3
   unocss:
     specifier: ^65.4.0
-    version: 65.4.0(postcss@8.4.39)(vite@6.0.7)(vue@2.7.16)
+    version: 65.4.0(postcss@8.4.49)(vite@6.0.7)(vue@2.7.16)
   unplugin-auto-import:
-    specifier: ^0.19.0
-    version: 0.19.0
+    specifier: ^19.0.0
+    version: 19.0.0
   vite:
     specifier: ^6.0.7
     version: 6.0.7
@@ -1322,7 +1322,7 @@ packages:
       - vue
     dev: true
 
-  /@unocss/postcss@65.4.0(postcss@8.4.39):
+  /@unocss/postcss@65.4.0(postcss@8.4.49):
     resolution: {integrity: sha512-sg2k7B3T8B55QHNqNeOm61RmKE4m2355jxbMCAY1rx/CZCFUTUTI4pd+XY9ekbZjLe84YUlBs4bt62MOlJ58hg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1332,7 +1332,7 @@ packages:
       '@unocss/core': 65.4.0
       '@unocss/rule-utils': 65.4.0
       css-tree: 3.1.0
-      postcss: 8.4.39
+      postcss: 8.4.49
       tinyglobby: 0.2.10
     transitivePeerDependencies:
       - supports-color
@@ -1399,13 +1399,8 @@ packages:
       '@unocss/rule-utils': 65.4.0
     dev: true
 
-  /@unocss/reset@0.58.9:
-    resolution: {integrity: sha512-nA2pg3tnwlquq+FDOHyKwZvs20A6iBsKPU7Yjb48JrNnzoaXqE+O9oN6782IG2yKVW4AcnsAnAnM4cxXhGzy1w==}
-    dev: false
-
   /@unocss/reset@65.4.0:
     resolution: {integrity: sha512-SHT5IKWbr1iZm1gswWJy+G0a/tnzIODZxjZGr64JStZn/uy7N9AVs5+Kmnlx2NyhW8VNApxTnAkl035jRejZPw==}
-    dev: true
 
   /@unocss/rule-utils@65.4.0:
     resolution: {integrity: sha512-Fb2IKg/wQlIBDY3rzVpDxwZ3Ho1ihcbFGEzr17ZM/N5MTrdzAA3GiXA3yzOjOboc/UnqRr2Q5JG8aACLn0lAAw==}
@@ -4076,7 +4071,7 @@ packages:
       unist-util-visit-parents: 6.0.1
     dev: true
 
-  /unocss@65.4.0(postcss@8.4.39)(vite@6.0.7)(vue@2.7.16):
+  /unocss@65.4.0(postcss@8.4.49)(vite@6.0.7)(vue@2.7.16):
     resolution: {integrity: sha512-1JO+9YHJ1n0xedOUWfgjJfQXentoxtMuXqR9+kB8I8A9N+PC73KX2YOMjvTia+NSrnSgnCmmnnsUWQqnJZR9fA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -4091,7 +4086,7 @@ packages:
       '@unocss/astro': 65.4.0(vite@6.0.7)(vue@2.7.16)
       '@unocss/cli': 65.4.0
       '@unocss/core': 65.4.0
-      '@unocss/postcss': 65.4.0(postcss@8.4.39)
+      '@unocss/postcss': 65.4.0(postcss@8.4.49)
       '@unocss/preset-attributify': 65.4.0
       '@unocss/preset-icons': 65.4.0
       '@unocss/preset-mini': 65.4.0
@@ -4113,8 +4108,8 @@ packages:
       - vue
     dev: true
 
-  /unplugin-auto-import@0.19.0:
-    resolution: {integrity: sha512-W97gTDEWu/L1EcKCXY5Ni8bsMW1E9kv12wYQv3mYpd7zcFctXYlLKsqeva6sbCQbzS8t9AG/XdU5/WkEJKPlFw==}
+  /unplugin-auto-import@19.0.0:
+    resolution: {integrity: sha512-TREXtXqCM6YLy3rE2tjvKZEaCiPlP2e5bmnRKaS8AM2MlNgjV7UP4RPieWIfs4Isv0GoeHmov956PIIvJYdqpQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': ^3.2.2
